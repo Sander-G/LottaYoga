@@ -156,29 +156,17 @@ html, body, html * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 0rem 4rem;
+  text-align: left;
+  padding: 0rem 6rem;
   color: white;
 }
 .OverMij h2 {
   padding: 2em;
 }
 
-.Lesrooster {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-image: url("../../Foto/sitepic-2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom, center;
-  height: 100vh;
-  width: 100vw;
-}
-.Lesrooster h2 {
-  padding: 2em;
+.YogaAlliancePix {
+  height: 5rem;
+  margin: 1rem;
 }
 
 .YogaVormen {
@@ -190,6 +178,10 @@ html, body, html * {
   color: white;
   width: 100vw;
   height: 100vh;
+  background-image: url("../../Foto/sitepic-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom, center;
 }
 .YogaVormen h2 {
   padding: 2em;
@@ -209,10 +201,6 @@ html, body, html * {
   color: white;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../Foto/sitepic-3.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom, center;
 }
 .YogaAanbod h2 {
   padding: 2em;
@@ -224,6 +212,12 @@ html, body, html * {
   flex: 33.33%;
 }
 
+#zwangerFoto {
+  border-radius: 15px;
+  opacity: 70%;
+  margin-top: 1rem;
+}
+
 .infoPagina {
   display: flex;
   flex-direction: column;
@@ -233,6 +227,10 @@ html, body, html * {
   color: white;
   width: 100vw;
   height: 100vh;
+  background-image: url("../../Foto/sitepic-4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom, center;
 }
 .infoPagina h2 {
   padding: 2em;
@@ -242,6 +240,9 @@ html, body, html * {
   padding: 1em;
   font-weight: 400;
   flex: 33.33%;
+}
+.locatie a, .tarieven a, .contact a {
+  text-decoration: none;
 }
 
 .footer {
@@ -283,7 +284,7 @@ html, body, html * {
 
 .parallax3 {
   height: 100%;
-  background-image: url("../../Foto/sitepic-3.jpg");
+  background-image: url("../../Foto/sitepic-4.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
