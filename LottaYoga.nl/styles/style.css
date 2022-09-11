@@ -34,39 +34,35 @@ html, body, html * {
 }
 
 .mobile-nav {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 0.1rem;
   right: 100%;
-  width: 29%;
-  min-height: 100vh;
-  display: inline-block;
-  z-index: 79;
-  padding-top: 1.2rem;
+  max-width: auto;
+  height: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.3rem;
   padding-right: 1.2em;
   color: rgba(222, 222, 222, 0.761);
   transition: 0.4s;
 }
 
 .mobile-nav.is-active {
-  right: 0;
+  right: 3%;
 }
 
 .mobile-nav a {
-  display: inline-block;
-  text-align: center;
-  font-size: 1.1rem;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 1rem;
   font-weight: 500;
-  width: 100%;
-  max-width: 100px;
-  padding-top: 0.3em;
+  width: auto;
+  height: auto;
+  margin: 5px 10px 5px;
   color: rgba(255, 255, 255, 0.934);
   text-decoration: none;
-}
-
-.mobile-nav a:hover {
-  color: rgba(222, 222, 222, 0.761);
-  transition: 0.3s ease-in-out;
-  transform: scale(1.05);
 }
 
 .hero {
@@ -192,6 +188,11 @@ html, body, html * {
   font-weight: 400;
 }
 
+#YogaAanbod2 {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 .YogaAanbod {
   display: flex;
   flex-direction: column;
@@ -201,6 +202,10 @@ html, body, html * {
   color: white;
   width: 100vw;
   height: 100vh;
+  background-image: url("../../Foto/sitepic-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom, center;
 }
 .YogaAanbod h2 {
   padding: 2em;
@@ -247,10 +252,12 @@ html, body, html * {
 
 .footer {
   display: flex;
+  position: relative;
+  bottom: 0px;
   align-items: center;
   justify-content: space-between;
   min-height: 3rem;
-  padding-top: -2rem;
+  margin-top: -3rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-top: 1px solid white;
@@ -280,13 +287,4 @@ html, body, html * {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom, center;
-}
-
-.parallax3 {
-  height: 100%;
-  background-image: url("../../Foto/sitepic-4.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom, right, center;
 }
