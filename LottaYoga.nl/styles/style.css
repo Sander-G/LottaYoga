@@ -28,6 +28,14 @@ html, body, html * {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
 .root {
   min-height: 100vh;
   font-size: 62, 5%;
@@ -49,6 +57,7 @@ html, body, html * {
 
 .mobile-nav.is-active {
   right: 3%;
+  padding-right: 2em;
 }
 
 .mobile-nav a {
@@ -75,10 +84,9 @@ html, body, html * {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
 .logoLeft {
   width: 50%;
-  height: 85vh;
+  height: 90vh;
   margin-bottom: auto;
   display: flex;
   align-items: center;
@@ -86,11 +94,25 @@ html, body, html * {
   position: relative;
 }
 
+@media (max-width: 820px) {
+  .logoLeft {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .logoLeft img {
+    padding-top: 10rem;
+  }
+}
 .logoRight {
   width: 50vw;
   height: 90vh;
 }
 
+@media (max-width: 820px) {
+  .logoRight {
+    display: none;
+  }
+}
 .hamburgerWrapper {
   display: flex;
   flex-direction: row;
