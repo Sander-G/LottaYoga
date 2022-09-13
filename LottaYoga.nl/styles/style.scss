@@ -70,9 +70,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    @media (max-width: 820px){
 
-    }
 }
 
 .logoLeft {
@@ -89,7 +87,7 @@
         width: 100%;
         align-items: flex-start;
         & img {
-            padding-top: 10rem;
+            padding-top: 8rem;
         }
 }
 }
@@ -232,11 +230,17 @@
     background-image: url("../../Foto/sitepic-2.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom, center;  
-    // background-image: url("../../Foto/sitepic-3.jpg");
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-position: bottom, center;
+    background-position: left, center;  
+
+    @media (max-width: 820px){
+        height: 100vh;
+        background-image: url("../../Foto/sitepic-2_M.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left, center;
+    }
+ 
 
 
     h2 {
@@ -271,6 +275,16 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom, center;  
+
+    @media (max-width: 820px){
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../Foto/sitepic-4_M.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom, center;
+    }
    
 
     
@@ -310,8 +324,15 @@
     font-weight: 200;
 };
 
+.footerlinks {
+    display:flex;
+    align-items: center;
+
+}
 .socials {
-padding: 0 1rem;
+padding: 0 0.5rem;
+margin-right: 0.5rem;
+
   
     
 }
@@ -324,10 +345,18 @@ padding: 0 1rem;
     height: 100%;
     background-image: url("../../Foto/sitepic-5.jpg");
     background-attachment: fixed;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right, center;
+
+    @media (max-width: 820px){
+        height: 100%;
+        background-image: url("../../Foto/sitepic-5_M.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right, center;
+    }
   
   }
 
@@ -335,10 +364,17 @@ padding: 0 1rem;
     height: 100%;
     background-image: url("../../Foto/sitepic-2.jpg");
     background-attachment: fixed;
-
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom, center;
+    background-position: left, center;
   
+    @media (max-width: 820px){
+        height: 100%;
+        background-image: url("../../Foto/sitepic-2_M.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left, center;
+    }
   }
 
