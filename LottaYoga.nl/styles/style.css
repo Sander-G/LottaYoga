@@ -43,10 +43,9 @@ html, body, html * {
 
 .mobile-nav {
   position: absolute;
-  top: 0.1rem;
   right: 100%;
   max-width: auto;
-  height: 1rem;
+  height: 1.5rem;
   display: flex;
   flex-direction: row;
   padding-top: 2.3rem;
@@ -54,12 +53,6 @@ html, body, html * {
   color: rgba(222, 222, 222, 0.761);
   transition: 0.4s;
 }
-
-.mobile-nav.is-active {
-  right: 3%;
-  padding-right: 2em;
-}
-
 .mobile-nav a {
   display: flex;
   position: relative;
@@ -72,6 +65,23 @@ html, body, html * {
   margin: 5px 10px 5px;
   color: rgba(255, 255, 255, 0.934);
   text-decoration: none;
+}
+@media (max-width: 320px) {
+  .mobile-nav a {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+}
+
+.mobile-nav.is-active {
+  right: 3%;
+  padding-right: 2em;
+}
+@media (max-width: 320px) {
+  .mobile-nav.is-active {
+    right: 10%;
+    padding-right: 2em;
+  }
 }
 
 .hero {
@@ -141,6 +151,11 @@ html, body, html * {
   border: none;
   z-index: 99;
 }
+@media (max-width: 320px) {
+  .hamburger {
+    width: 40px;
+  }
+}
 
 .hamburger .bar, .hamburger:before, .hamburger:after {
   display: block;
@@ -152,13 +167,28 @@ html, body, html * {
   margin: 6px 0px;
   transition: 0.4s;
 }
+@media (max-width: 320px) {
+  .hamburger .bar, .hamburger:before, .hamburger:after {
+    height: 4px;
+  }
+}
 
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
+@media (max-width: 320px) {
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-7px, 5px);
+  }
+}
 
 .hamburger.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
+}
+@media (max-width: 320px) {
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
 }
 
 .hamburger.is-active .bar {
