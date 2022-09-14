@@ -18,9 +18,6 @@
     height: 1rem;
     display: flex;
     flex-direction: row;
-    
-    
-    // z-index: 79;
     padding-top: 2.3rem;
     padding-right: 1.2em;
     color: $primary-color;
@@ -88,6 +85,16 @@
         align-items: flex-start;
         & img {
             padding-top: 8rem;
+        }
+}
+}
+@media (max-width: 320px){
+    .logoLeft {
+       
+        align-items: flex-start;
+        & img {
+            padding-top: 2.5rem;
+            width: 65%;
         }
 }
 }
