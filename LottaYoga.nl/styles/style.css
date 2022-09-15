@@ -6,7 +6,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -114,7 +114,7 @@ html, body, html * {
     padding-top: 8rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .logoLeft {
     align-items: flex-start;
   }
@@ -379,6 +379,15 @@ html, body, html * {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right, center;
+  }
+}
+@media (max-width: 500px) {
+  .parallax {
+    background-image: url("../../Foto/sitepic-5_S.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
   }
 }
 

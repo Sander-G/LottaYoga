@@ -30,7 +30,7 @@
         font-weight: 500;
         width: auto;
         height: auto;
-        overflow: hidden
+        // overflow: hidden;
         margin: 5px 10px 5px;
         color: $secondary-color;
         text-decoration: none;
@@ -90,7 +90,7 @@
         }
 }
 }
-@media (max-width: 320px){
+@media (max-width: 500px){
     .logoLeft {
        
         align-items: flex-start;
@@ -379,6 +379,15 @@ padding: 0 0.5rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right, center;
+    }
+
+    @media (max-width: 500px){
+        
+        background-image: url("../../Foto/sitepic-5_S.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom, center;
     }
   
   }
