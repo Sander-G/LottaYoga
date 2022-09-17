@@ -333,6 +333,19 @@
     a { text-decoration: none};
 }
 
+.mapWrapper {
+ overflow:hidden;
+ width: 280px;
+ height: 170px;   
+ border-radius: 15px;
+ opacity: 40%;
+}
+
+.mapInner {
+    width: 280px;
+    height: 180px;
+}
+
 
 .footer {
     
