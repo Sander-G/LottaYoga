@@ -207,27 +207,6 @@
 
 
 
-.YogaVormen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../../Foto/sitepic-2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom, center;   
-
-    
-
-    h2 {
-        padding: 2em;
-    };
-
-}
 
 .yin, .vinyasa, .hatha {
     padding: 1em;
@@ -357,13 +336,15 @@
     padding-right: 1.5rem;
     border-top: 1px solid white;
     width: 100vw;
-    color: white;
+    color: black;
+    
+
    
 }
 
 .algemeneVoorwaarden {
 display: flex;
-cursor:pointer;
+cursor: pointer;
 
 }
 
