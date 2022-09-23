@@ -354,7 +354,7 @@ html, body, html * {
 }
 
 .alignR {
-  text-align: right;
+  float: right;
 }
 
 .mapWrapper {
