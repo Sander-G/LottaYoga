@@ -202,7 +202,9 @@ html, body, html * {
   }
 }
 
-.hamburger .bar, .hamburger:before, .hamburger:after {
+.hamburger .bar,
+.hamburger:before,
+.hamburger:after {
   display: block;
   content: "";
   width: 100%;
@@ -213,7 +215,9 @@ html, body, html * {
   transition: 0.4s;
 }
 @media (max-width: 320px) {
-  .hamburger .bar, .hamburger:before, .hamburger:after {
+  .hamburger .bar,
+.hamburger:before,
+.hamburger:after {
     height: 4px;
   }
 }
@@ -263,7 +267,9 @@ html, body, html * {
   margin: 1rem;
 }
 
-.yin, .vinyasa, .hatha {
+.yin,
+.vinyasa,
+.hatha {
   padding: 1em;
   font-weight: 400;
 }
@@ -293,7 +299,6 @@ html, body, html * {
     width: 100vw;
     background-image: url("../../Foto/sitepic-2_M.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: left, center;
   }
@@ -302,7 +307,9 @@ html, body, html * {
   padding: 2em;
 }
 
-.zwangerschapsYoga, .bedrijfsYoga, .priveYoga {
+.zwangerschapsYoga,
+.bedrijfsYoga,
+.priveYoga {
   padding: 1em;
   font-weight: 400;
   flex: 33.33%;
@@ -344,12 +351,16 @@ html, body, html * {
   padding: 2em;
 }
 
-.locatie, .tarieven, .contact {
+.locatie,
+.tarieven,
+.contact {
   padding: 1em;
   font-weight: 400;
   flex: 33.33%;
 }
-.locatie a, .tarieven a, .contact a {
+.locatie a,
+.tarieven a,
+.contact a {
   text-decoration: none;
 }
 
@@ -378,7 +389,7 @@ html, body, html * {
   justify-content: space-between;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  border-top: 1px solid white;
+  border-top: 1px solid #fff;
   width: 100vw;
   height: 3rem;
   margin-top: -2.9rem;
@@ -430,15 +441,6 @@ html, body, html * {
     background-position: right, center;
   }
 }
-@media (max-width: 500px) {
-  .parallax {
-    background-image: url("../../Foto/sitepic-5_S.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom, center;
-  }
-}
 
 .parallax2 {
   height: 100%;
@@ -454,17 +456,6 @@ html, body, html * {
     height: 100%;
     width: 100vw;
     background-image: url("../../Foto/sitepic-2_M.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left, bottom;
-  }
-}
-@media (max-width: 500px) {
-  .parallax2 {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../Foto/sitepic-2_S.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
