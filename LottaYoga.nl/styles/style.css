@@ -39,6 +39,25 @@ img {
   height: auto;
 }
 
+.button {
+  background: none;
+  color: inherit;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-weight: 200;
+  padding: 0.7rem 0.7rem;
+  font-size: 0.8em;
+  min-width: 130px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.button:hover {
+  font-weight: bolder;
+}
+
 section {
   min-height: 100vh;
   display: grid;
@@ -82,11 +101,6 @@ p {
 
 .heroHeading {
   font-size: 0px;
-}
-
-.footerText {
-  font-size: 1.8rem;
-  padding-top: 1rem;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -387,9 +401,24 @@ p {
   float: right;
 }
 
+.mail {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: auto;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+.mail img {
+  margin-right: 0.5em;
+  margin-bottom: -0.7rem;
+}
+
 .mapWrapper {
+  display: flex;
   overflow: hidden;
-  width: 280px;
+  max-width: 280px;
   height: 170px;
   border-radius: 15px;
   opacity: 40%;
@@ -404,15 +433,15 @@ p {
   position: fixed;
   bottom: 0;
   display: flex;
-  background: transparent;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   border-top: 1px solid #fff;
   width: 100vw;
-  height: 2.5rem;
-  margin-bottom: 2.5rem;
+  height: 3.5rem;
+  overflow: hidden;
   color: white;
 }
 
@@ -427,8 +456,12 @@ p {
 }
 .footerlinks img {
   padding-right: 2.5rem;
-  margin-top: 1.2em;
-  height: 1;
+}
+
+.footerText {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 80%;
 }
 
 /* parallax scrolling */

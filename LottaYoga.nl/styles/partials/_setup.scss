@@ -36,6 +36,29 @@ img {
   height: auto;
 }
 
+.button {
+  background: none;
+	color: inherit;
+	border: 1px solid white;
+  border-radius: 3px;
+  font-weight: 200;
+	padding: 0.7rem 0.7rem;
+  font-size: 0.8em;
+  min-width: 130px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+	cursor: pointer;
+	outline: inherit;
+
+ 
+  
+}
+
+.button:hover {
+  font-weight: bolder;
+
+}
+
 // scroll animation
 section {
   min-height: 100vh;
@@ -61,3 +84,4 @@ section {
   opacity: 1;
   filter: blur(0);
 }
+
