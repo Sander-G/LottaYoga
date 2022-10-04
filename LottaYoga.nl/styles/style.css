@@ -77,11 +77,16 @@ h3 {
 
 p {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .heroHeading {
   font-size: 0px;
+}
+
+.footerText {
+  font-size: 1.8rem;
+  padding-top: 1rem;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -323,7 +328,7 @@ p {
 .zwangerschapsYoga,
 .bedrijfsYoga,
 .priveYoga {
-  padding: 1em;
+  padding: 2em;
   font-weight: 400;
   flex: 33.33%;
 }
@@ -337,8 +342,6 @@ p {
 .infoPagina {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   color: white;
   width: 100vw;
@@ -363,16 +366,18 @@ p {
   padding: 1em;
 }
 
-.locatie,
+.lesrooster,
 .tarieven,
 .contact {
-  padding: 1em;
+  height: 100%;
+  overflow: auto;
+  flex: 1;
+  padding: 2em;
   font-weight: 400;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.locatie a,
+.lesrooster a,
 .tarieven a,
 .contact a {
   text-decoration: none;
@@ -396,42 +401,37 @@ p {
 }
 
 .footer {
-  display: flex;
-  position: relative;
+  position: fixed;
   bottom: 0;
+  display: flex;
+  background: transparent;
   align-items: center;
   justify-content: space-between;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-top: 1px solid #fff;
   width: 100vw;
-  height: 3rem;
-  margin-top: -2.9rem;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
   color: white;
 }
 
 .algemeneVoorwaarden {
-  display: flex;
   cursor: pointer;
 }
 
 .footerlinks {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .socials {
-  padding: 0 0.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
 }
 
 .copyright {
   margin-left: 1rem;
-}
-
-.footer_right {
-  display: flex;
-  align-items: center;
 }
 
 /* parallax scrolling */
