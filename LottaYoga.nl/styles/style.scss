@@ -354,7 +354,7 @@
     border-top: 1px solid #fff;
     width: 100vw;
     height: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
    
     color: white;
 }
@@ -369,19 +369,16 @@
 .footerlinks {
     display: flex;
     flex-direction: row;
+    align-items: center;
+ img {
+    padding-right: 2.5rem;
+    margin-top: 1.2em;
+    height: 1;
+}
     
 }
 
-.socials {
- 
-    padding-right: 2.5rem;
-    padding-top: 1rem;
-   
-}
 
-.copyright {
-    margin-left: 1rem;
-}
 
 
 
