@@ -6,7 +6,16 @@ html {
 }
 
 html, body {
-  overflow-x: hidden;
+  /* hide scrollbar but allow scrolling */
+}
+html element, body element {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow: scroll;
+}
+html element::-webkit-scrollbar, body element::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 *,
@@ -460,7 +469,7 @@ p {
 
 .footerText {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 80%;
 }
 
