@@ -8,3 +8,17 @@
   }
 
 
+// animations off if preferred
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+
+

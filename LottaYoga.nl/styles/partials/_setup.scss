@@ -1,21 +1,21 @@
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+*, html,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
-  html, body {
+html, body {
     -ms-overflow-style: none; 
     scrollbar-width: none;
     overflow: scroll; 
-  }
-  body::-webkit-scrollbar {
+}
+body::-webkit-scrollbar {
     display: none;
-  }
+}
 
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+.root {
+  min-height: 100vh;
+ 
 }
 
 body,
@@ -70,20 +70,9 @@ section {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.hidden {
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-}
-
-@media(prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-}
+// .hidden {
+//   opacity: 0;
+//   transition: all 3s;
+//   filter: blur(5px);
+// }
 
