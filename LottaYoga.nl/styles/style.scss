@@ -189,12 +189,7 @@
     margin-top: 2rem;
 }
 
-.yin,
-.vinyasa,
-.hatha {
-    padding: 1rem;
-    font-weight: 400;
-}
+
 
 #YogaAanbod2 {
     background: rgba(0, 0, 0, 0.5);
@@ -234,10 +229,45 @@
 
 }
 
+.yin,
+.vinyasa,
+.hatha {
+    padding: 2rem;
+    font-weight: 400;
+}
+
+.YogaAanbod2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 0rem 1rem;
+  
+
+    @media (max-width: 768px) {
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+
+    h2 {
+        padding-bottom: 1em;
+    }
+
+    ;
+
+}
+
+
 .zwangerschapsYoga,
 .bedrijfsYoga,
 .priveYoga {
-    padding: 2em;
+    padding: 2rem;
     font-weight: 400;
     flex: 33.33%;
 }
@@ -252,6 +282,8 @@
 .infoPagina {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: white;
     width: 100vw;
@@ -272,7 +304,7 @@
     }
 
     h2 {
-        padding: 1em;
+        padding-bottom: 1em;
     }
 
     
@@ -286,7 +318,7 @@
     height: 100%;
     overflow: auto;
     flex: 1;
-    padding: 2em;
+    padding: 2rem;
     font-weight: 400;
     flex-direction: column;
     align-items: flex-start;
@@ -298,9 +330,6 @@
     ;
 }
 
-.alignR {
-    float: right;
-}
 
 .mail {
     display: flex;
@@ -349,7 +378,14 @@
 .algemeneVoorwaarden {
     cursor: pointer;
     margin-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: 200;
+   
 }
+.algemeneVoorwaarden:hover p {
+    font-weight: bolder;
+ }
+
 
 .footerlinks {
     display: flex;
@@ -362,11 +398,7 @@
     
 }
 
-.footerText {
-    font-size: 1.8rem;
-    font-weight: 200;
-    letter-spacing: 80%;
-  }
+
 
 
 /* parallax scrolling */
