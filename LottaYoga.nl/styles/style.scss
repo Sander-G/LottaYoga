@@ -5,8 +5,8 @@
 
 .mobile-nav {
     position: absolute;
-    top: 0.1rem;
-    right: 100%;
+    top: 0.8rem;
+    right: -150%;
     max-width: auto;
     height: 1rem;
     display: flex;
@@ -17,14 +17,14 @@
     padding-top: 2.3rem;
     padding-right: 1.2em;
     color: $primary-color;
-    transition: 0.4s;
+    transition: 2000ms;
 
     & a {
         display: flex;
         position: relative;
         align-items: flex-end;
         justify-content: space-between;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 500;
         width: auto;
         height: auto;
@@ -39,8 +39,8 @@
 }
 
 .mobile-nav.is-active {
-    right: 3%;
-    padding-right: 2em;
+    right: 5%;
+    margin-right: 3em;
 
     @media (max-width: 320px) {
         right: 10%;
