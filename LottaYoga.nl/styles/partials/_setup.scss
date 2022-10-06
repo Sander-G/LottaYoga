@@ -7,7 +7,8 @@
 html, body {
     -ms-overflow-style: none; 
     scrollbar-width: none;
-    overflow: scroll; 
+    // overflow: scroll; 
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -42,12 +43,7 @@ img {
   height: auto;
 }
 
-// paragraph text align right 
-.alignR {
-  float: right;
-  font-size: 1.8rem;
-  font-weight: 200;
-}
+
 
 .button {
   background: none;
