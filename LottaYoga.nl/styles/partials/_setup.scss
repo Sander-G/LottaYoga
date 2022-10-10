@@ -13,11 +13,8 @@ html, body {
 body::-webkit-scrollbar {
     display: none;
 }
-
-
 .root {
   min-height: 100vh;
- 
 }
 
 body,
@@ -44,8 +41,7 @@ img {
   height: auto;
 }
 
-
-
+// button styling algemeen
 .button {
   background: none;
 	color: inherit;
@@ -64,7 +60,6 @@ img {
 .button:hover {
   font-weight: bolder;
 }
-
 
 section {
   min-height: 100vh;
