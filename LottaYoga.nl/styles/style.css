@@ -139,7 +139,7 @@ p {
   padding: 20px;
   border: 1px solid #888;
   border-radius: 5px;
-  width: 80%;
+  width: 90%;
 }
 
 .close {
@@ -399,16 +399,6 @@ p {
   background-attachment: fixed;
   background-position: left, center;
 }
-@media (max-width: 768px) {
-  .YogaAanbod {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../Foto/sitepic-2_M.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: left, center;
-  }
-}
 .YogaAanbod h2 {
   padding-bottom: 1em;
 }
@@ -466,17 +456,6 @@ p {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom, center;
-}
-@media (max-width: 768px) {
-  .infoPagina {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../Foto/sitepic-4_M.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom, center;
-  }
 }
 .infoPagina h2 {
   padding-bottom: 1em;
@@ -581,17 +560,6 @@ p {
   background-size: cover;
   background-position: right, center;
 }
-@media (max-width: 768px) {
-  .parallax {
-    height: 100%;
-    width: 100vw;
-    background-image: url("../../Foto/sitepic-5_M.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right, center;
-  }
-}
 
 .parallax2 {
   height: 100%;
@@ -601,15 +569,4 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left, bottom;
-}
-@media (max-width: 768px) {
-  .parallax2 {
-    height: 100%;
-    width: 100vw;
-    background-image: url("../../Foto/sitepic-2_M.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left, bottom;
-  }
 }
