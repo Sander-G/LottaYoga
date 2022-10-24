@@ -2,8 +2,14 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    font-size: 62.5%;
+    // font-size: 62.5%;
 }
+html {
+  font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40);
+}
+
+
 html, body {
     -ms-overflow-style: none; 
     scrollbar-width: none;
