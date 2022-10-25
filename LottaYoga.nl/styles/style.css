@@ -7,8 +7,8 @@
 }
 
 html {
-  font-size: calc(0.625em + 0.25 * (100vw - 80em) / 40);
-  font-size: -webkit-calc(62.5% + 0.25 * (100vw - 8000%) / 40);
+  font-size: calc(0.675em + 0.25 * (100vw - 80em) / 40);
+  font-size: -webkit-calc(67.5% + 0.25 * (100vw - 8000%) / 40);
 }
 
 html, body {
@@ -359,8 +359,15 @@ p {
 
 .wrapper {
   display: flex;
+  flex-direction: row;
   text-align: left;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .OverMij {
@@ -426,12 +433,6 @@ p {
   padding: 2rem 1rem;
   margin-top: 4rem;
 }
-@media (max-width: 768px) {
-  .YogaAanbod2 {
-    height: 100vh;
-    width: 100vw;
-  }
-}
 .YogaAanbod2 h2 {
   padding-bottom: 1rem;
   margin-top: 1rem;
@@ -452,6 +453,9 @@ p {
 }
 
 .infoPagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: white;
   width: 100vw;
@@ -468,11 +472,16 @@ p {
 }
 
 .infoWrapper {
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 4rem;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .infoWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .lesrooster,

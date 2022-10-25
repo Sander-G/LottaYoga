@@ -169,8 +169,15 @@
 
 .wrapper {
     display: flex;
+    flex-direction: row;
     text-align: left;
     padding: 1rem;
+
+    @media (max-width: 500px) {
+      flex-direction: column; ;
+      align-items: flex-start;
+      
+    }
 }
 
 .OverMij {
@@ -231,6 +238,7 @@
 
     ;
 
+  
 }
 
 .yin,
@@ -253,11 +261,11 @@
     margin-top: 4rem;
   
 
-    @media (max-width: 768px) {
-        height: 100vh;
-        width: 100vw;
+    // @media (max-width: 768px) {
+    //     height: 100vh;
+    //     width: 100vw;
         
-    }
+    // }
 
 
     h2 {
@@ -287,7 +295,9 @@
 
 
 .infoPagina {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     color: white;
     width: 100vw;
@@ -315,12 +325,17 @@
 }
 
 .infoWrapper {
-   padding: 1rem;
-   display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- grid-column-gap: 4rem;   
-align-items: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
 
+
+   @media (max-width: 500px) {
+    flex-direction: column; ;
+    align-items: flex-start;
+    
+  }
 }
 
 .lesrooster,
@@ -330,8 +345,8 @@ align-items: center;
     height: 100%;
     font-weight: 400;
     flex-direction: column;
-
     align-items: flex-start;
+    
 
     a {
         text-decoration: none
