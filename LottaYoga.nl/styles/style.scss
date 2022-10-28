@@ -252,7 +252,8 @@
 .yin,
 .vinyasa,
 .hatha {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-weight: 400;
 }
 
@@ -289,15 +290,16 @@
 .zwangerschapsYoga,
 .bedrijfsYoga,
 .priveYoga {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-weight: 400;
     flex: 33.33%;
 }
 
 #zwangerschapsYoga {
-    border-radius: 15px;
+    border-radius: 5px;
     opacity: 70%;
-    margin-top: 2.5rem;
+    margin-top: 1.3rem;
 
 }
 
