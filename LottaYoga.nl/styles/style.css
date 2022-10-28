@@ -7,8 +7,8 @@
 }
 
 html {
-  font-size: calc(0.675em + 0.25 * (100vw - 80em) / 40);
-  font-size: -webkit-calc(67.5% + 0.25 * (100vw - 8000%) / 40);
+  font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
+  font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
 }
 
 html, body {
@@ -37,6 +37,15 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: 400;
+}
+
+p {
+  -moz-osx-font-smoothing: white;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: 0.06em;
+  font-weight: 300;
 }
 
 ol,
@@ -78,19 +87,6 @@ section {
 
 html, body, html * {
   font-family: "Roboto", sans-serif;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-}
-
-p {
-  font-weight: 200;
-  font-size: 1.8rem;
 }
 
 .heroHeading {
@@ -370,6 +366,13 @@ p {
   }
 }
 
+.allianceWrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 1rem;
+}
+
 .OverMij {
   display: flex;
   flex-direction: column;
@@ -489,7 +492,6 @@ p {
 .contact {
   text-align: left;
   height: 100%;
-  font-weight: 400;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -546,8 +548,6 @@ p {
 .algemeneVoorwaarden {
   cursor: pointer;
   margin-left: 2rem;
-  font-size: 1.8rem;
-  font-weight: 200;
 }
 
 .algemeneVoorwaarden:hover p {
