@@ -265,16 +265,8 @@ html, body, html * {
     align-items: flex-start;
   }
   .logoLeft img {
-    padding-top: 8rem;
-  }
-}
-@media (max-width: 500px) {
-  .logoLeft {
-    align-items: flex-start;
-  }
-  .logoLeft img {
     padding-top: 2.5rem;
-    width: 65%;
+    width: 40%;
   }
 }
 .logoRight {

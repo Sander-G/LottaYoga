@@ -79,21 +79,14 @@
     .logoLeft {
         width: 100%;
         align-items: flex-start;
-        & img {
-            padding-top: 8rem;
+       
+            & img {
+                padding-top: 2.5rem;
+                width: 40%;
+            }
         }
     }
-}
 
-@media (max-width: 500px) {
-    .logoLeft {
-        align-items: flex-start;
-        & img {
-            padding-top: 2.5rem;
-            width: 65%;
-        }
-    }
-}
 
 .logoRight {
     width: 50vw;
