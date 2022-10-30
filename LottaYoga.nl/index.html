@@ -21,7 +21,7 @@
                         <a class="navItem" href="#Informatie">Informatie</a>
                     </nav>
                     <div class="hamburgerWrapper">
-                        <button class="hamburger">
+                        <button class="hamburger" aria-label="hamburger">
                             <div class="bar"></div>
                         </button>
                     </div>
@@ -70,8 +70,8 @@
                     </div>
                 </div>
                 <div class="allianceWrapper">
-                    <img src="/Foto/YogaAlliance2.png" class="YogaAlliancePix" />
-                    <img src="/Foto/YogaAlliance1.png" class="YogaAlliancePix" />
+                    <img src="/Foto/YogaAlliance2.png" alt="E-RYT 500"class="YogaAlliancePix" />
+                    <img src="/Foto/YogaAlliance1.png" alt="YACEP" class="YogaAlliancePix" />
                 </div>
             </section>
             <div class="parallax2">
@@ -243,7 +243,7 @@
 
                         <div class="mail">
 
-                            <a href="mailto:lotte@lottayoga.nl"><img src="/Foto/envelope.svg" />info@LottaYoga.nl</a>
+                            <a href="mailto:lotte@lottayoga.nl"><img src="/Foto/envelope.svg" alt="Mail Sturen"/>info@LottaYoga.nl</a>
 
                         </div>
 
@@ -273,9 +273,9 @@
                 </div>
                 <div class="footerlinks">
                     <a href="https://instagram.com">
-                        <img src="../../Foto/instagram.svg" /></a>
+                        <img src="../../Foto/instagram.svg" alt="Volg LottaYoga op Instagram"/></a>
                     <a href="https://facebook.com">
-                        <img src="../../Foto/facebook.svg" /></a>
+                        <img src="../../Foto/facebook.svg" alt="Volg LottaYoga op Facebook"/></a>
                     <div>
                         <p>ⓒ 2022 - Lotta Yoga</p>
                     </div>
@@ -293,12 +293,13 @@
                 <div class="inschrijfFormulier">
                     <h3> Inschrijfformulier</h3><br>
                     <p>
-                        Naam: <input type="text"><br>
-                        Adres: <input type="text"><br>
-                        Tel: <input type="text"><br>
-                        Email: <input type="text"><br>
+                       <label for="naam"> Naam:<input type="text" title="naam"></label> 
+                        <br>
+                        Adres: <input type="text" title="adres"><br>
+                        Tel: <input type="text" title="tel"><br>
+                        Email: <input type="text" title="email"><br>
 
-                        Ik schrijf mij in voor: <select name="lesKeuze" id="lesKeuze">
+                        Ik schrijf mij in voor: <select title="lesKeuze" id="lesKeuze">
                             <option value="1x">Maandabonnement 1x p/week les - 35 </option>
                             <option value="2x">Maandabonnement 2x p/week les - 55 </option>
                             <option value="losseLes">Losse les - 12,50 </option>
@@ -306,7 +307,7 @@
                         </select><br>
                         <span class="textarea" role="textbox" contenteditable></span><br>
                         Ik heb de algemene voorwaarden gelezen, en ben hiermee ook akkoord:
-                        <input type="checkbox" id="algVoorwCheckbox" name="checkbox" value="gelezen" required><br>
+                        <input type="checkbox" id="algVoorwCheckbox" title="checkbox" value="gelezen" required><br>
                         <button type="submit">Verstuur!</button>
                     </p>
                 </div>
