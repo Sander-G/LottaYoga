@@ -8,6 +8,15 @@ html {
   font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
   font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
 
+  @media (max-width: 768px) {
+  
+    }
+    @media (max-width: 320px) {
+      font-size: calc(1.01em + 0.25 * (100vw - 80em) / 40);
+      font-size: -webkit-calc(101% + 0.25 * (100vw - 8000%) / 40);
+   
+    }
+
 }
 
 html, body {
@@ -39,7 +48,7 @@ ul {
 
 p {
 
-  -moz-osx-font-smoothing: white;
+  -moz-osx-font-smoothing: #f2f1ef;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;

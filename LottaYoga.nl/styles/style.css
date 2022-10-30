@@ -10,6 +10,12 @@ html {
   font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
   font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
 }
+@media (max-width: 320px) {
+  html {
+    font-size: calc(1.01em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(101% + 0.25 * (100vw - 8000%) / 40);
+  }
+}
 
 html, body {
   -ms-overflow-style: none;
@@ -40,7 +46,7 @@ ul {
 }
 
 p {
-  -moz-osx-font-smoothing: white;
+  -moz-osx-font-smoothing: #f2f1ef;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;
@@ -188,7 +194,7 @@ html, body, html * {
 
 .mobile-nav {
   position: absolute;
-  top: 0.8rem;
+  top: 0.75rem;
   right: 100%;
   max-width: auto;
   height: 1rem;
@@ -202,23 +208,11 @@ html, body, html * {
   position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  margin: 5px 10px 5px;
+  margin: 5px 10px;
   color: rgba(255, 255, 255, 0.934);
   text-decoration: none;
-}
-@media (max-width: 768px) {
-  .mobile-nav a {
-    font-size: 1.3rem;
-    font-weight: 400;
-  }
-}
-@media (max-width: 320px) {
-  .mobile-nav a {
-    font-size: 0.8em;
-    font-weight: 400;
-  }
 }
 .mobile-nav a:hover {
   border-bottom: 1px solid white;
@@ -234,7 +228,7 @@ html, body, html * {
 }
 @media (max-width: 500px) {
   .mobile-nav.is-active {
-    right: 10%;
+    right: 17.5%;
   }
 }
 
@@ -299,7 +293,7 @@ html, body, html * {
 }
 @media (max-width: 320px) {
   .hamburger {
-    width: 40px;
+    scale: 0.8;
   }
 }
 
@@ -315,30 +309,13 @@ html, body, html * {
   margin: 6px 0px;
   transition: 0.4s;
 }
-@media (max-width: 320px) {
-  .hamburger .bar,
-.hamburger:before,
-.hamburger:after {
-    height: 4px;
-  }
-}
 
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
-@media (max-width: 320px) {
-  .hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-7px, 5px);
-  }
-}
 
 .hamburger.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
-}
-@media (max-width: 320px) {
-  .hamburger.is-active:after {
-    transform: rotate(45deg) translate(-8px, -7px);
-  }
 }
 
 .hamburger.is-active .bar {
@@ -358,18 +335,11 @@ html, body, html * {
   }
 }
 
-.allianceWrapper {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  padding: 1rem;
-}
-
 .OverMij {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
   padding: 0rem 2rem;
   color: white;
@@ -378,11 +348,23 @@ html, body, html * {
   padding-bottom: 1em;
 }
 
+.allianceWrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 1rem;
+}
+
 .YogaAlliancePix {
   max-height: 90px;
   max-width: 100%;
   margin: 1rem;
-  margin-top: 2rem;
+}
+@media (max-width: 320px) {
+  .YogaAlliancePix {
+    max-height: 50px;
+    margin-top: 4rem;
+  }
 }
 
 #YogaAanbod2 {
