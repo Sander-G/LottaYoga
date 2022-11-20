@@ -101,8 +101,6 @@ html, body, html * {
 
 .alignR {
   float: right;
-  font-size: 1.8rem;
-  font-weight: 200;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
