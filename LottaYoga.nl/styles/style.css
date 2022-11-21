@@ -10,7 +10,13 @@ html {
   font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
   font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
+  html {
+    font-size: calc(1.2em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(120% + 0.25 * (100vw - 8000%) / 40);
+  }
+}
+@media (max-width: 400px) {
   html {
     font-size: calc(1.01em + 0.25 * (100vw - 80em) / 40);
     font-size: -webkit-calc(101% + 0.25 * (100vw - 8000%) / 40);
@@ -70,11 +76,11 @@ img {
   border: 1px solid white;
   border-radius: 3px;
   font-weight: 200;
-  padding: 0.7rem 0.7rem;
+  padding: 4px 5px;
   font-size: 0.8em;
-  min-width: 130px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  min-width: 80px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   outline: inherit;
 }
@@ -324,12 +330,15 @@ html, body, html * {
   display: flex;
   flex-direction: row;
   text-align: left;
-  padding: 1rem;
 }
 @media (max-width: 500px) {
   .wrapper {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .wrapper h2 {
+    padding-bottom: 0rem;
+    margin-top: 0rem;
   }
 }
 
@@ -343,22 +352,23 @@ html, body, html * {
   color: white;
 }
 .OverMij h2 {
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .allianceWrapper {
   display: flex;
   flex-direction: row;
-  text-align: left;
-  padding: 1rem;
+  place-self: center;
+  margin-top: 15rem;
 }
 
 .YogaAlliancePix {
-  max-height: 90px;
+  max-height: 70px;
   max-width: 100%;
-  margin: 1rem;
+  margin: 0.5rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .YogaAlliancePix {
     max-height: 50px;
     margin-top: 4rem;
@@ -386,7 +396,7 @@ html, body, html * {
   background-position: left, center;
 }
 .YogaAanbod h2 {
-  padding-bottom: 1em;
+  padding: 2rem 0;
 }
 
 .yin,
@@ -401,17 +411,23 @@ html, body, html * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   color: white;
   width: 100vw;
   height: 100vh;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   margin-top: 4rem;
 }
 .YogaAanbod2 h2 {
   padding-bottom: 1rem;
   margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  .YogaAanbod2 h2 {
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+  }
 }
 
 .zwangerschapsYoga,
@@ -428,6 +444,11 @@ html, body, html * {
   opacity: 70%;
   margin-top: 1.3rem;
 }
+@media (max-width: 500px) {
+  #zwangerschapsYoga {
+    max-width: 240px;
+  }
+}
 
 .infoPagina {
   display: flex;
@@ -443,9 +464,20 @@ html, body, html * {
   background-attachment: fixed;
   background-position: bottom, center;
 }
+@media (max-width: 500px) {
+  .infoPagina {
+    padding: 0rem;
+  }
+}
 .infoPagina h2 {
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  .infoPagina h2 {
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+  }
 }
 
 .infoWrapper {
@@ -453,11 +485,13 @@ html, body, html * {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  border: 1px solid hotpink;
 }
 @media (max-width: 500px) {
   .infoWrapper {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 1rem;
   }
 }
 
@@ -466,6 +500,7 @@ html, body, html * {
 .contact {
   text-align: left;
   height: 100%;
+  width: 90vw;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -475,20 +510,6 @@ html, body, html * {
   text-decoration: none;
 }
 
-.mail {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  max-width: auto;
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 2em;
-}
-.mail img {
-  margin-right: 0.5em;
-  margin-bottom: -0.7rem;
-}
-
 .mapWrapper {
   display: flex;
   overflow: hidden;
@@ -496,6 +517,11 @@ html, body, html * {
   height: 140px;
   border-radius: 15px;
   opacity: 40%;
+}
+@media (max-width: 500px) {
+  .mapWrapper {
+    display: none;
+  }
 }
 
 .mapInner {
@@ -528,14 +554,15 @@ html, body, html * {
   font-weight: bolder;
 }
 
-.footerlinks {
+.mail,
+.iconWrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 2rem;
 }
-.footerlinks img {
-  padding-right: 2.5rem;
+.mail img,
+.iconWrapper img {
+  padding-right: 1.5rem;
 }
 
 /* parallax scrolling */

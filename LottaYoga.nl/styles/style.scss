@@ -153,13 +153,20 @@
     display: flex;
     flex-direction: row;
     text-align: left;
-    padding: 1rem;
 
     @media (max-width: 500px) {
       flex-direction: column; ;
       align-items: flex-start;
       
+      h2 {
+            padding-bottom: 0rem;
+            margin-top: 0rem;
+            }
+    
     }
+
+
+   
 }
 
 
@@ -173,23 +180,24 @@
     padding: 0rem 2rem;
     color: white;
     h2 {
-        padding-bottom: 1em;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
 .allianceWrapper {
     display: flex;
     flex-direction: row;
-    text-align: left;
-    padding: 1rem;
+    place-self: center;
+    margin-top: 15rem;
 }
 
 .YogaAlliancePix {
-    max-height: 90px;
+    max-height: 70px;
     max-width: 100%;
-    margin: 1rem;
 
-    @media (max-width: 320px) {
+    margin: 0.5rem;
+    @media (max-width: 500px) {
         max-height: 50px;
         margin-top: 4rem;
     }
@@ -228,7 +236,7 @@
 
 
     h2 {
-        padding-bottom: 1em;
+        padding: 2rem 0;
     }
 
     ;
@@ -248,12 +256,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     color: white;
     width: 100vw;
     height: 100vh;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
     margin-top: 4rem;
   
 
@@ -267,6 +275,10 @@
     h2 {
         padding-bottom: 1rem;
         margin-top: 1rem;
+        @media (max-width: 500px) {
+            padding-bottom: 0rem;
+            margin-top: 0rem;
+            }
     }
 
     ;
@@ -281,6 +293,7 @@
     padding-right: 2rem;
     font-weight: 400;
     flex: 33.33%;
+
 }
 
 #zwangerschapsYoga {
@@ -288,8 +301,13 @@
     opacity: 70%;
     margin-top: 1.3rem;
 
+    @media (max-width: 500px) {
+       max-width: 240px;
+        }
+
 }
 
+// Info pagina
 
 .infoPagina {
     display: flex;
@@ -304,10 +322,16 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom, center;
-
+    @media (max-width: 500px) {
+        padding: 0rem;
+    }
     h2 {
-        padding-bottom: 1em;
-        padding-top: 1em;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        @media (max-width: 500px) {
+            padding-bottom: 0rem;
+            margin-top: 0rem;
+            }
     }
 }
 
@@ -316,10 +340,12 @@
    flex-direction: row;
    align-items: center;
    justify-content: space-evenly;
-
+   border: 1px solid hotpink;
    @media (max-width: 500px) {
-    flex-direction: column; ;
-    align-items: flex-start; 
+    flex-direction: column; 
+    align-items: center; 
+    
+    padding: 1rem;
     }
 }
 
@@ -328,39 +354,47 @@
 .contact {
     text-align: left;
     height: 100%;
+    width: 90vw;
     flex-direction: column;
     align-items: flex-start;
-    
 
     a {
-        text-decoration: none
+        text-decoration: none;
     }
 
-    ;
+
 }
 
 
-.mail {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    max-width: auto;
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-bottom: 2em;
-    img {
-        margin-right:0.5em;
-        margin-bottom: -0.7rem
-    }
-}
+
+
+
+//  {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     max-width: auto;
+//     font-size: 1.5em;
+//     font-weight: 300;
+   
+//     img {
+//         margin-right:0.5em;
+//         margin-bottom: -0.7rem
+//     }
+// }
 
 .mapWrapper {
+
+    
     display: flex;
     overflow: hidden;
     max-width: 250px;
     height: 140px;
     border-radius: 15px;
     opacity: 40%;
+    @media (max-width: 500px){
+        display: none
+    }
 }
 
 .mapInner {
@@ -386,23 +420,20 @@
 
 .algemeneVoorwaarden {
     cursor: pointer;
-    margin-left: 2rem;
-    // font-size: 1.8rem;
-    // font-weight: 200;
-   
+    margin-left: 2rem;   
 }
 .algemeneVoorwaarden:hover p {
     font-weight: bolder;
  }
 
-
-.footerlinks {
+ .mail,
+.iconWrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 2rem;
+  
  img {
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
 }
     
 }
