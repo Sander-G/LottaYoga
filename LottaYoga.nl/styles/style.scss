@@ -470,23 +470,36 @@
 .parallax {
    height:100%;
     width: 100vw;
-    // background-image: url(../../Foto/imagesets/LottaYoga_BG_Top@0.5x.jpg);
-
-    @media only screen 
-    and (min-device-width : 300px) 
-    and (max-device-width : 1024px) 
-    and (orientation : portrait)
-   {
-        background-image: url(../../Foto/imagesets/LottaYoga_BG_Top_Portrait@1x.jpg);
-        background-attachment: fixed;
+     background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top@1x.jpg") 1x, 
+    url("../../Foto/imagesets/LottaYoga_BG_Top@2x.jpg") 2x);
     background-repeat: no-repeat;
-    background-size: cover;
-    // background-position: center, bottom ;
-    background-position-x: 30%;
-    background-position-y: 0%;
-    
-    } 
+    background-attachment: fixed;
+    ;
 
+-o-background-size:100vw; 
+-moz-background-size:100vw; 
+-webkit-background-size:100vw; 
+background-size:100vw; 
+background-position: bottom;
+
+    @media (max-device-width : 1100px) {
+  
+    // and (-webkit-device-pixel-ratio: 3)
+   
+    background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top_Portrait@1x.jpg") 1x, 
+    url("../../Foto/imagesets/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+   
+        -o-background-size:cover; 
+        -webkit-background-size:cover;
+        background-size:cover;
+        -moz-background-sizeo:cover; 
+        background-position: bottom;
+
+    
+    
+    }
     // background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top@1x.jpg") 1x, 
     // url("../../Foto/imagesets/LottaYoga_BG_Top@2x.jpg") 2x);
     
