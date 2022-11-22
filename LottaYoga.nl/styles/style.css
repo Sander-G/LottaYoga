@@ -204,7 +204,7 @@ html, body, html * {
   height: 1rem;
   display: flex;
   flex-direction: row;
-  padding-top: 2.4rem;
+  padding-top: 2.2rem;
   color: rgba(222, 222, 222, 0.761);
 }
 .mobile-nav a {
@@ -249,30 +249,28 @@ html, body, html * {
 
 .logoLeft {
   width: 50%;
-  height: 90vh;
-  margin-bottom: auto;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1025px) {
   .logoLeft {
     width: 100%;
     align-items: flex-start;
   }
   .logoLeft img {
-    padding-top: 2.5rem;
+    margin-top: 8rem;
     width: 40%;
   }
 }
 .logoRight {
   width: 50vw;
-  height: 90vh;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1025px) {
   .logoRight {
     display: none;
   }
@@ -295,9 +293,9 @@ html, body, html * {
   border: none;
   z-index: 99;
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .hamburger {
-    scale: 0.8;
+    width: 55px;
   }
 }
 
@@ -311,15 +309,25 @@ html, body, html * {
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.934);
   margin: 6px 0px;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
+@media (max-width: 1000px) {
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+}
 
 .hamburger.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
+}
+@media (max-width: 500px) {
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -9px);
+  }
 }
 
 .hamburger.is-active .bar {
@@ -575,11 +583,11 @@ html, body, html * {
 .parallax {
   height: 100%;
   width: 100vw;
-  background-image: url("../../Foto/sitepic-5.jpg");
+  background-image: url("../../Foto/LottaYoga_BG_Top@1x.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right, center;
+  background-position: right, bottom;
 }
 
 .parallax2 {
