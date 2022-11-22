@@ -96,7 +96,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 1.2rem;
     
    
     
@@ -114,7 +114,7 @@
     z-index: 99;
 
     @media (max-width: 500px) {
-       width: 55px;
+       width: 54px;
     }
     
 }
@@ -129,9 +129,8 @@
     border-radius: 3px;
     background-color: $secondary-color;
     margin: 6px 0px;
-    transition: .5s;
+    transition: .3s;
 
-    
    
 
 }
@@ -139,20 +138,20 @@
 .hamburger.is-active:before {
     transform: rotate(-45deg) translate(-8px, 6px);
 
-    @media (max-width: 1000px) {
-    transform: rotate(-45deg) translate(-7px, 6px);
+    // @media (max-width: 1000px) {
+    // transform: rotate(-45deg) translate(-7px, 6px);
         
-     }
+    //  }
    
 }
 
 .hamburger.is-active:after {
     transform: rotate(45deg) translate(-9px, -8px);
 
-    @media (max-width: 500px) {
-        transform: rotate(45deg) translate(-9px, -9px);
+    // @media (max-width: 1000px) {
+    //     transform: rotate(45deg) translate(-9px, -9px);
             
-         }
+    //      }
 }
 
 .hamburger.is-active .bar {
@@ -332,7 +331,9 @@
     width: 100vw;
     height: 100vh;
     padding: 1rem 2rem;
+    background: skyblue;
     background-image: url("../../Foto/sitepic-4.jpg");
+    
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom, center;
@@ -467,23 +468,32 @@
 
 /* parallax scrolling */
 .parallax {
-    height: 100%;
+   height:100%;
     width: 100vw;
-    background-image: url("../../Foto/LottaYoga_BG_Top@1x.jpg");
-    background-attachment: fixed;
+    // background-image: url(../../Foto/imagesets/LottaYoga_BG_Top@0.5x.jpg);
+
+    @media only screen 
+    and (min-device-width : 300px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait)
+   {
+        background-image: url(../../Foto/imagesets/LottaYoga_BG_Top_Portrait@1x.jpg);
+        background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right, bottom;
+    // background-position: center, bottom ;
+    background-position-x: 30%;
+    background-position-y: 0%;
+    
+    } 
 
-    // @media (max-width: 768px) {
-    //     height: 100%;
-    //     width: 100vw;
-    //     background-image: url("../../Foto/sitepic-5_M.jpg");
-    //     background-attachment: fixed;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: right, center;
-    // }
+    // background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top@1x.jpg") 1x, 
+    // url("../../Foto/imagesets/LottaYoga_BG_Top@2x.jpg") 2x);
+    
+
+    
+   
+
 }
 
 .parallax2 {
