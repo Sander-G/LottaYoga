@@ -101,8 +101,6 @@ html, body, html * {
 
 .alignR {
   float: right;
-  font-size: 1.8rem;
-  font-weight: 200;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -477,18 +475,12 @@ html, body, html * {
   text-decoration: none;
 }
 
-.mail {
+.socialsWrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: center;
-  max-width: auto;
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 2em;
-}
-.mail img {
-  margin-right: 0.5em;
-  margin-bottom: -0.7rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
 .mapWrapper {
@@ -530,14 +522,8 @@ html, body, html * {
   font-weight: bolder;
 }
 
-.footerlinks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.copyRight {
   margin-right: 2rem;
-}
-.footerlinks img {
-  padding-right: 2.5rem;
 }
 
 /* parallax scrolling */

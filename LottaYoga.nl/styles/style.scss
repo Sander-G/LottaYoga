@@ -330,7 +330,6 @@
     height: 100%;
     flex-direction: column;
     align-items: flex-start;
-    
 
     a {
         text-decoration: none
@@ -340,19 +339,15 @@
 }
 
 
-.mail {
+.socialsWrapper {
+
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     align-items: center;
-    max-width: auto;
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-bottom: 2em;
-    img {
-        margin-right:0.5em;
-        margin-bottom: -0.7rem
-    }
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
+
 
 .mapWrapper {
     display: flex;
@@ -387,8 +382,7 @@
 .algemeneVoorwaarden {
     cursor: pointer;
     margin-left: 2rem;
-    // font-size: 1.8rem;
-    // font-weight: 200;
+ 
    
 }
 .algemeneVoorwaarden:hover p {
@@ -396,19 +390,10 @@
  }
 
 
-.footerlinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 2rem;
- img {
-    padding-right: 2.5rem;
-}
-    
-}
+ .copyRight {
+margin-right: 2rem;
 
-
-
+ }
 
 /* parallax scrolling */
 .parallax {
