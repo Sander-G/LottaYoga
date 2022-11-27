@@ -7,16 +7,16 @@
 html {
   font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
   font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
-
-  @media (max-width: 768px) {
-  
-    }
-    @media (max-width: 320px) {
-      font-size: calc(1.01em + 0.25 * (100vw - 80em) / 40);
-      font-size: -webkit-calc(101% + 0.25 * (100vw - 8000%) / 40);
-   
+ 
+    @media (max-width: 380px) {
+      font-size: calc(1.06em + 0.25 * (100vw - 80em) / 40);
+      font-size: -webkit-calc(106% + 0.25 * (100vw - 8000%) / 40);  
     }
 
+    @media (min-width: 381px) and (max-width: 768px) {
+      font-size: calc(1.06em + 0.25 * (100vw - 80em) / 40);
+      font-size: -webkit-calc(106% + 0.25 * (100vw - 8000%) / 40);  
+    }
 }
 
 html, body {

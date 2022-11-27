@@ -10,10 +10,16 @@ html {
   font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
   font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   html {
-    font-size: calc(1.01em + 0.25 * (100vw - 80em) / 40);
-    font-size: -webkit-calc(101% + 0.25 * (100vw - 8000%) / 40);
+    font-size: calc(1.06em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(106% + 0.25 * (100vw - 8000%) / 40);
+  }
+}
+@media (min-width: 381px) and (max-width: 768px) {
+  html {
+    font-size: calc(1.06em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(106% + 0.25 * (100vw - 8000%) / 40);
   }
 }
 
@@ -303,7 +309,7 @@ html, body, html * {
   width: 100%;
   height: 5px;
   border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.934);
+  background-color: #fff;
   margin: 6px 0px;
   transition: 0.4s;
 }
@@ -324,7 +330,7 @@ html, body, html * {
   display: flex;
   flex-direction: row;
   text-align: left;
-  padding: 1rem;
+  padding: 0rem;
 }
 @media (max-width: 500px) {
   .wrapper {
@@ -339,7 +345,7 @@ html, body, html * {
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  padding: 0rem 2rem;
+  padding: 0rem 1.5rem;
   color: white;
 }
 .OverMij h2 {
@@ -349,25 +355,19 @@ html, body, html * {
 .allianceWrapper {
   display: flex;
   flex-direction: row;
-  text-align: left;
   padding: 1rem;
 }
 
 .YogaAlliancePix {
-  max-height: 90px;
+  max-height: 75px;
   max-width: 100%;
   margin: 1rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .YogaAlliancePix {
     max-height: 50px;
     margin-top: 4rem;
   }
-}
-
-#YogaAanbod2 {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
 }
 
 .YogaAanbod {
@@ -387,46 +387,62 @@ html, body, html * {
 }
 .YogaAanbod h2 {
   padding-bottom: 1em;
+  text-shadow: 1px 1px #393939;
+}
+.YogaAanbod h3 {
+  text-shadow: 1px 1px #393939;
 }
 
 .yin,
 .vinyasa,
 .hatha {
-  padding-left: 2rem;
-  padding-right: 2rem;
   font-weight: 400;
+  padding-inline: 0.5em;
+  border: 1px solid red;
 }
 
 .YogaAanbod2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
   color: white;
   width: 100vw;
   height: 100vh;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
+  padding: 1rem 1.5rem;
 }
 .YogaAanbod2 h2 {
-  padding-bottom: 1rem;
-  margin-top: 1rem;
+  padding-bottom: 1em;
+  text-shadow: 1px 1px #393939;
+}
+
+#YogaAanbod2 {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .zwangerschapsYoga,
 .bedrijfsYoga,
-.priveYoga {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-weight: 400;
-  flex: 33.33%;
+.priveYoga,
+.workshops {
+  border: 1px solid red;
+  padding-inline: 0.5em;
+  text-align: left;
 }
 
-#zwangerschapsYoga {
+.fotoWrapper {
+  display: inline-flex;
+}
+
+#zwangerschapsYogaPic {
   border-radius: 5px;
   opacity: 70%;
   margin-top: 1.3rem;
+  padding-bottom: 1em;
+  max-height: 150px;
+  float: right;
 }
 
 .infoPagina {
@@ -437,15 +453,19 @@ html, body, html * {
   color: white;
   width: 100vw;
   height: 100vh;
-  padding: 1rem 2rem;
+  padding: 0rem 1.5rem;
   background-image: url("../../Foto/sitepic-4.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom, center;
+  border: 1px solid red;
 }
 .infoPagina h2 {
   padding-bottom: 1em;
-  padding-top: 1em;
+  text-shadow: 1px 1px #393939;
+}
+.infoPagina h3 {
+  text-shadow: 1px 1px #393939;
 }
 
 .infoWrapper {
