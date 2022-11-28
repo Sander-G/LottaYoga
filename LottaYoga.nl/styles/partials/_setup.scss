@@ -23,6 +23,10 @@ html {
       font-size: calc(1.25em + 0.25 * (100vw - 80em) / 40);
       font-size: -webkit-calc(125% + 0.25 * (100vw - 8000%) / 40);  
     }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      font-size: calc(1.28em + 0.25 * (100vw - 80em) / 40);
+      font-size: -webkit-calc(127% + 0.25 * (100vw - 8000%) / 40);  
+    }
 }
 
 html, body {
@@ -98,7 +102,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  background: rgba(0, 0, 0, 0.5);
+ 
 }
 
 
