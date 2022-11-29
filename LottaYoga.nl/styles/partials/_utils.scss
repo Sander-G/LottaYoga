@@ -7,19 +7,8 @@
   }
 }
 
-// animations off if preferred
-@media(prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}
 
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-}
-
+// Modal from here
 .modal {
   display: none;
   position: fixed;
@@ -81,7 +70,6 @@
   padding: 0.1rem;
   background-color: white;
   margin-top: 1rem;
- 
 }
 
 .textarea[contenteditable]:empty::before {
