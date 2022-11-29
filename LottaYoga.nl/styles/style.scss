@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 2.4rem;
-    color: $primary-color;
+    color: #fff;
 
     & a {
         display: flex;
@@ -22,7 +22,7 @@
         font-size: 1.3rem;
         font-weight: 400;
         margin: 5px 10px;
-        color: $secondary-color;
+        color: #fff;
         text-decoration: none;
 
     }
@@ -56,6 +56,7 @@
 
 .hero::before {
     content: '';
+    z-index: -3;
     position: fixed;
     display: block;
     top: 0px;
@@ -217,10 +218,11 @@
 
 #OverMij {
     background: rgba(0, 0, 0, 0.5);
+
 }
 
 .OverMij {
-
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +258,6 @@
     }
 }
 
-
 .YogaAanbod {
     display: flex;
     flex-direction: column;
@@ -271,12 +272,12 @@
     background-position: bottom, center;
     padding: 0rem 1rem;
     width: 100vw;
-    height: 100vh;
+    min-height: 100%;
+    border: 1px solid green;
 
     @media screen and (max-device-width: 1024px) {
         background-image: none;
     }
-
 
     h2 {
         padding-bottom: 1em;
@@ -287,12 +288,15 @@
         margin-bottom: 0;
         text-shadow: 1px 1px #393939;
     }
-
     p {
         margin-top: 0.2em;
     }
 }
 
+#YogaAanbod {
+    width: 100vw;
+    height: 100vh;
+}
 
 
 .yin,
@@ -315,7 +319,7 @@
     color: white;
     width: 100vw;
     height: 100vh;
-   
+
     background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -329,10 +333,10 @@
     }
 }
 
-
 #aanbod2 {
     background: rgba(0, 0, 0, 0.5);
 }
+
 .zwangerschapsYoga,
 .bedrijfsYoga,
 .priveYoga,
@@ -340,7 +344,7 @@
     border: 1px solid red;
     padding-inline: 1rem;
     text-align: left;
-    
+
 }
 
 .fotoWrapper {
