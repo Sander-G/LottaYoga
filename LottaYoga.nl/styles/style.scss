@@ -243,6 +243,20 @@
     will-change: transform;
 }
 
+.bgBottom {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../../Foto/sitepic-4.jpg");
+    transform: translateZ(0);
+    will-change: transform;
+}
+
 #YogaAanbod {
     width: 100vw;
     height: 100vh;
@@ -413,7 +427,7 @@
 }
 
 .footer {
-    position: relative;
+    position: inherit;
     bottom: 0;
     background-color: transparent;
     display: flex;
@@ -430,7 +444,7 @@
 
 .algemeneVoorwaarden {
     cursor: pointer;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 .algemeneVoorwaarden:hover p {
@@ -438,5 +452,5 @@
 }
 
 .copyRight {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
