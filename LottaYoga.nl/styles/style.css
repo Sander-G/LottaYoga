@@ -37,6 +37,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body::-webkit-scrollbar {
@@ -68,6 +69,7 @@ p {
   text-rendering: optimizelegibility !important;
   letter-spacing: 0.06em;
   font-weight: 300;
+  text-shadow: 0.5px 0.5px #170f0f;
 }
 
 ol,
@@ -275,13 +277,14 @@ html * {
   z-index: 1;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
   .logoLeft {
+    z-index: -2;
     width: 100%;
-    align-items: flex-start;
   }
   .logoLeft img {
-    margin-top: 2.5rem;
+    position: absolute;
+    top: 20%;
     width: 40%;
   }
 }
@@ -290,7 +293,7 @@ html * {
   height: 90vh;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
   .logoRight {
     display: none;
   }
@@ -300,6 +303,7 @@ html * {
   flex-direction: row;
   justify-content: flex-end;
   padding: 1rem;
+  z-index: -2;
 }
 
 .hamburger {
@@ -311,11 +315,10 @@ html * {
   background: none;
   outline: none;
   border: none;
-  z-index: 99;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .hamburger {
-    scale: 0.8;
+    width: 55px;
   }
 }
 
@@ -370,7 +373,6 @@ html * {
   text-align: left;
   margin: 0rem 1rem;
   color: white;
-  border: 1px solid red;
 }
 .OverMij h2 {
   padding-bottom: 1em;
@@ -419,9 +421,9 @@ html * {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
   transform: translateZ(0);
   will-change: transform;
@@ -433,9 +435,9 @@ html * {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   background-image: url("../../Foto/sitepic-4.jpg");
   transform: translateZ(0);
   will-change: transform;
@@ -456,8 +458,7 @@ html * {
   padding: 0rem 1rem;
   width: 100vw;
   min-height: 100%;
-  border: 1px solid green;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 .YogaAanbod h2 {
@@ -477,7 +478,6 @@ html * {
 .hatha {
   font-weight: 400;
   padding-inline: 0.5em;
-  border: 1px solid red;
 }
 
 .YogaAanbod2 {
@@ -486,8 +486,7 @@ html * {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
-  z-index: 1;
+  z-index: 4;
   color: white;
   width: 100vw;
   min-height: 100%;
@@ -503,13 +502,12 @@ html * {
 .bedrijfsYoga,
 .priveYoga,
 .workshops {
-  border: 1px solid red;
   padding-inline: 1rem;
   text-align: left;
 }
 
 .fotoWrapper p {
-  text-align: justify;
+  text-align: wrap;
 }
 
 #zwangerschapsYogaPic {
@@ -529,10 +527,12 @@ html * {
   justify-content: center;
   text-align: center;
   color: white;
+  z-index: 5;
   width: 100vw;
   min-height: 100%;
   position: relative;
   padding: 0rem 1rem;
+  margin-bottom: -3.5rem;
 }
 .infoPagina h2 {
   padding-bottom: 1em;
@@ -540,13 +540,13 @@ html * {
 }
 .infoPagina h3 {
   text-shadow: 1px 1px #393939;
+  margin-bottom: 0.1rem;
 }
 
 .infoWrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .infoWrapper {
@@ -558,11 +558,11 @@ html * {
 .lesrooster,
 .tarieven,
 .contact {
+  margin-top: 1.5rem;
   text-align: left;
   flex-direction: column;
   align-items: flex-start;
   padding-inline: 0.5rem;
-  border: 1px solid red;
   width: 100%;
 }
 .lesrooster a,
@@ -574,15 +574,31 @@ html * {
 .socialsWrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.rowWrapper {
+  display: flex;
+  gap: 1.5rem;
 }
 
 @media (min-width: 1025px) {
   .mapIcon {
     display: none;
   }
+}
+
+.locatieTxt {
+  letter-spacing: 0.06em;
+  font-weight: 300;
+}
+
+.locatieWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .mapWrapper {
@@ -605,8 +621,7 @@ html * {
 }
 
 .footer {
-  position: inherit;
-  bottom: 0;
+  position: relative;
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -614,10 +629,10 @@ html * {
   justify-content: space-between;
   border-top: 1px solid #fff;
   width: 100vw;
-  margin-top: 1rem;
   height: 2.5rem;
   overflow: hidden;
   color: white;
+  margin-top: -2.5rem;
 }
 
 .algemeneVoorwaarden {
