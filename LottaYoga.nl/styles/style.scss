@@ -222,7 +222,7 @@
 }
 
 .OverMij {
-    z-index: 1;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,6 +258,42 @@
     }
 }
 
+
+.fixedBg {
+    width: 100%;
+    height: 100vh;
+
+    /* Important */
+    position: relative;
+}
+
+.bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+#YogaAanbod {
+    width: 100vw;
+    height: 100vh;
+}
 .YogaAanbod {
     display: flex;
     flex-direction: column;
@@ -265,25 +301,16 @@
     justify-content: center;
     text-align: center;
     color: white;
-    // z-index: -2;
-    background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom, center;
     padding: 0rem 1rem;
     width: 100vw;
     min-height: 100%;
     border: 1px solid green;
-
-    @media screen and (max-device-width: 1024px) {
-        background-image: none;
-    }
-
+    z-index: 1;
+    position: relative;
     h2 {
         padding-bottom: 1em;
         text-shadow: 1px 1px #393939;
     }
-
     h3 {
         margin-bottom: 0;
         text-shadow: 1px 1px #393939;
@@ -293,10 +320,6 @@
     }
 }
 
-#YogaAanbod {
-    width: 100vw;
-    height: 100vh;
-}
 
 
 .yin,
