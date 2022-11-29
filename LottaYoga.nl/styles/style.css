@@ -516,12 +516,9 @@ html * {
   text-align: center;
   color: white;
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
+  position: relative;
   padding: 0rem 1rem;
-  background-image: url("../../Foto/sitepic-4.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom, center;
 }
 .infoPagina h2 {
   padding-bottom: 1em;
@@ -603,8 +600,8 @@ html * {
   justify-content: space-between;
   border-top: 1px solid #fff;
   width: 100vw;
+  margin-top: 1rem;
   height: 2.5rem;
-  margin-top: -2.5rem;
   overflow: hidden;
   color: white;
 }
