@@ -508,21 +508,16 @@ html, body, html * {
   justify-content: center;
   text-align: center;
   color: white;
+  z-index: 1;
   color: white;
   width: 100vw;
-  height: 100vh;
-  background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
+  min-height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
 }
 .YogaAanbod2 h3 {
   text-shadow: 1px 1px #393939;
   margin-bottom: 0.1rem;
-}
-
-#aanbod2 {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .zwangerschapsYoga,
