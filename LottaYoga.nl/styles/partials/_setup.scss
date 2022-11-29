@@ -1,43 +1,44 @@
-*, html,
+*,
+html,
 *:before,
 *:after {
-    box-sizing: border-box;
-
-
-
+  box-sizing: border-box;
 }
-
-
-
 
 html {
-  font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
-  font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
- 
-    @media (max-width: 380px) {
-      font-size: calc(1.12em + 0.25 * (100vw - 80em) / 40);
-      font-size: -webkit-calc(112% + 0.25 * (100vw - 8000%) / 40);  
-    }
+  @media (max-width: 380px) {
+    font-size: calc(1.12em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(112% + 0.25 * (100vw - 8000%) / 40);
+  }
 
-    @media (min-width: 381px) and (max-width: 768px) {
-      font-size: calc(1.25em + 0.25 * (100vw - 80em) / 40);
-      font-size: -webkit-calc(125% + 0.25 * (100vw - 8000%) / 40);  
-    }
-    @media (min-width: 769px) and (max-width: 1024px) {
-      font-size: calc(1.28em + 0.25 * (100vw - 80em) / 40);
-      font-size: -webkit-calc(127% + 0.25 * (100vw - 8000%) / 40);  
-    }
+  @media (min-width: 381px) and (max-width: 768px) {
+    font-size: calc(1.25em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(125% + 0.25 * (100vw - 8000%) / 40);
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: calc(1.28em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(127% + 0.25 * (100vw - 8000%) / 40);
+  }
+
+  @media (min-width: 1025px) {
+    font-size: calc(1.30em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(130% + 0.25 * (100vw - 8000%) / 40);
+  }
 }
 
-html, body {
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
-    // overflow: scroll; 
-    scroll-behavior: smooth;
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  width: 100vw;
 }
+
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
+
 .root {
   min-height: 100vh;
 }
@@ -57,14 +58,13 @@ ul {
 }
 
 p {
-
   -moz-osx-font-smoothing: #f2f1ef;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;
   letter-spacing: .06em;
   font-weight: 300;
-
+  text-shadow: 0.5px 0.5px #170f0f;
 }
 
 ol,
@@ -77,20 +77,19 @@ img {
   height: auto;
 }
 
-// button styling algemeen
 .button {
   background: none;
-	color: inherit;
-	border: 1px solid white;
+  color: inherit;
+  border: 1px solid white;
   border-radius: 3px;
   font-weight: 200;
-	padding: 0.7rem 0.7rem;
+  padding: 0.7rem 0.7rem;
   font-size: 0.8em;
   min-width: 130px;
   margin-bottom: 1rem;
   margin-top: 1rem;
-	cursor: pointer;
-	outline: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .button:hover {
@@ -102,7 +101,4 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
- 
 }
-
-
