@@ -1,33 +1,48 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
-*, html,
+*,
+html,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
 html {
-  font-size: calc(1em + 0.25 * (100vw - 80em) / 40);
-  font-size: -webkit-calc(100% + 0.25 * (100vw - 8000%) / 40);
+  background-color: #00598E;
 }
-@media (max-width: 500px) {
+@media (max-width: 380px) {
   html {
-    font-size: calc(1.2em + 0.25 * (100vw - 80em) / 40);
-    font-size: -webkit-calc(120% + 0.25 * (100vw - 8000%) / 40);
+    font-size: calc(1.12em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(112% + 0.25 * (100vw - 8000%) / 40);
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 381px) and (max-width: 768px) {
   html {
-    font-size: calc(1.01em + 0.25 * (100vw - 80em) / 40);
-    font-size: -webkit-calc(101% + 0.25 * (100vw - 8000%) / 40);
+    font-size: calc(1.25em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(125% + 0.25 * (100vw - 8000%) / 40);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: calc(1.28em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(127% + 0.25 * (100vw - 8000%) / 40);
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    font-size: calc(1.3em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(130% + 0.25 * (100vw - 8000%) / 40);
   }
 }
 
-html, body {
+html,
+body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  width: 100vw;
   height: 100%;
+  overscroll-behavior: none;
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +50,7 @@ body::-webkit-scrollbar {
 }
 
 .root {
-  min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 body,
@@ -59,6 +74,7 @@ p {
   text-rendering: optimizelegibility !important;
   letter-spacing: 0.06em;
   font-weight: 300;
+  text-shadow: 0.5px 0.5px #170f0f;
 }
 
 ol,
@@ -95,10 +111,11 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  background: rgba(0, 0, 0, 0.5);
 }
 
-html, body, html * {
+html,
+body,
+html * {
   font-family: "Roboto", sans-serif;
 }
 
@@ -118,16 +135,6 @@ html, body, html * {
     transition-duration: 0.001ms !important;
   }
 }
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -199,28 +206,28 @@ html, body, html * {
 
 .mobile-nav {
   position: absolute;
-  top: 0.75rem;
+  top: 0rem;
   right: 100%;
   max-width: auto;
-  height: 1rem;
+  height: 2rem;
   display: flex;
   flex-direction: row;
-  padding-top: 2.2rem;
-  color: rgba(222, 222, 222, 0.761);
+  padding-top: 2.35rem;
+  color: #fff;
 }
 .mobile-nav a {
   display: flex;
   position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 5px 10px;
-  color: rgba(255, 255, 255, 0.934);
+  color: #fff;
   text-decoration: none;
 }
 .mobile-nav a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .mobile-nav.is-active {
@@ -239,7 +246,23 @@ html, body, html * {
 
 .hero {
   min-height: 100vh;
-  max-width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  z-index: -3;
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-image: url("../pix/background/LottaYoga_BG_Top_Portrait@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .logoContainer {
@@ -254,24 +277,25 @@ html, body, html * {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
+  z-index: 1;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .logoLeft {
     width: 100%;
-    align-items: flex-start;
   }
   .logoLeft img {
-    margin-top: 8rem;
-    width: 40%;
+    position: absolute;
+    top: 25%;
+    width: 50%;
   }
 }
 .logoRight {
   width: 50vw;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .logoRight {
     display: none;
   }
@@ -280,7 +304,8 @@ html, body, html * {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 1.2rem;
+  padding: 1rem;
+  z-index: -2;
 }
 
 .hamburger {
@@ -292,11 +317,10 @@ html, body, html * {
   background: none;
   outline: none;
   border: none;
-  z-index: 99;
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .hamburger {
-    width: 54px;
+    width: 55px;
   }
 }
 
@@ -308,7 +332,7 @@ html, body, html * {
   width: 100%;
   height: 5px;
   border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.934);
+  background-color: #fff;
   margin: 6px 0px;
   transition: 0.3s;
 }
@@ -329,8 +353,9 @@ html, body, html * {
   display: flex;
   flex-direction: row;
   text-align: left;
+  padding: 0rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .wrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -341,14 +366,19 @@ html, body, html * {
   }
 }
 
-.overMij {
+#OverMij {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.OverMij {
+  z-index: 0;
   display: flex;
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: left;
-  padding: 0rem 2rem;
+  margin: 0rem 1rem;
   color: white;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -357,44 +387,77 @@ html, body, html * {
   padding-bottom: 1rem;
 }
 
-#overMij {
-  background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top@1x.jpg") 1x, url("../../Foto/imagesets/LottaYoga_BG_Top@2x.jpg") 2x);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom, center;
-}
-@media (max-width: 1100px) {
-  #overMij {
-    background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top_Portrait@1x.jpg") 1x, url("../../Foto/imagesets/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: bottom, center;
-  }
+.OverMij p {
+  padding-inline: 0.5em;
 }
 
 .allianceWrapper {
   display: flex;
   flex-direction: row;
-  place-self: center;
+  justify-content: flex-end;
 }
 
 .YogaAlliancePix {
   max-height: 70px;
   max-width: 100%;
-  margin: 0.5rem;
+  margin-inline: 0.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 380px) {
   .YogaAlliancePix {
     max-height: 50px;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 
-#YogaAanbod2 {
-  background-color: lightgreen;
-  color: white;
+.fixedBg {
+  width: 100%;
+  height: 100vh;
+  /* Important */
+  position: relative;
+}
+
+.bg-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00598E;
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.bgBottom {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00598E;
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url("../../Foto/sitepic-4.jpg");
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+#YogaAanbod {
+  width: 100vw;
+  height: 100vh;
 }
 
 .YogaAanbod {
@@ -404,21 +467,29 @@ html, body, html * {
   justify-content: center;
   text-align: center;
   color: white;
-  width: 100vw;
-  height: 100vh;
   padding: 0rem 1rem;
-  background-color: lightcoral;
+  width: 100vw;
+  min-height: 100%;
+  z-index: 2;
+  position: relative;
 }
 .YogaAanbod h2 {
-  padding: 2rem 0;
+  padding-bottom: 1em;
+  text-shadow: 1px 1px #393939;
+}
+.YogaAanbod h3 {
+  margin-bottom: 0;
+  text-shadow: 1px 1px #393939;
+}
+.YogaAanbod p {
+  margin-top: 0.2em;
 }
 
 .yin,
 .vinyasa,
 .hatha {
-  padding-left: 2rem;
-  padding-right: 2rem;
   font-weight: 400;
+  padding-inline: 0.5em;
 }
 
 .YogaAanbod2 {
@@ -427,37 +498,40 @@ html, body, html * {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  background-color: lightgreen;
+  z-index: 4;
   color: white;
   width: 100vw;
-  height: 100vh;
-  padding: 0rem 1rem;
-  margin-top: 4rem;
+  min-height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
 }
-.YogaAanbod2 h2 {
-  padding-bottom: 1rem;
-  margin-top: 1rem;
+.YogaAanbod2 h3 {
+  text-shadow: 1px 1px #393939;
+  margin-bottom: 0.1rem;
 }
-@media (max-width: 500px) {
-  .YogaAanbod2 h2 {
-    padding-bottom: 0rem;
-    margin-top: 0rem;
-  }
-}
+
 
 .zwangerschapsYoga,
 .bedrijfsYoga,
-.priveYoga {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-weight: 400;
-  flex: 33.33%;
+.priveYoga,
+.workshops {
+  padding-inline: 1rem;
+  text-align: left;
 }
 
-#zwangerschapsYoga {
-  border-radius: 5px;
+.fotoWrapper p {
+  text-align: wrap;
+}
+
+#zwangerschapsYogaPic {
+  border-radius: 7px;
   opacity: 70%;
-  margin-top: 1.3rem;
+  max-height: 140px;
+  float: right;
+  padding-left: 0.5em;
+  width: auto;
+  max-width: 50vw;
+  height: auto;
 }
 @media (max-width: 500px) {
   #zwangerschapsYoga {
@@ -471,15 +545,12 @@ html, body, html * {
   justify-content: center;
   text-align: center;
   color: white;
+  z-index: 1;
   width: 100vw;
-  height: 100vh;
-  padding: 1rem 2rem;
-  background: skyblue;
-  background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top@1x.jpg") 1x, url("../../Foto/imagesets/LottaYoga_BG_Top@2x.jpg") 2x);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom, center;
+  min-height: 100%;
+  position: relative;
+  padding: 0rem 1rem;
+  margin-bottom: -3.5rem;
 }
 @media (max-width: 1100px) {
   .infoPagina {
@@ -496,22 +567,18 @@ html, body, html * {
   }
 }
 .infoPagina h2 {
-  padding-bottom: 1rem;
-  margin-top: 1rem;
+  padding-bottom: 1em;
+  text-shadow: 1px 1px #393939;
 }
-@media (max-width: 500px) {
-  .infoPagina h2 {
-    padding-bottom: 0rem;
-    margin-top: 0rem;
-  }
+.infoPagina h3 {
+  text-shadow: 1px 1px #393939;
+  margin-bottom: 0.1rem;
 }
 
 .infoWrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 1rem;
+  align-items: flex-start;
 }
 @media (max-width: 500px) {
   .infoWrapper {
@@ -524,11 +591,12 @@ html, body, html * {
 .lesrooster,
 .tarieven,
 .contact {
+  margin-top: 1rem;
   text-align: left;
-  height: 100%;
-  width: 90vw;
   flex-direction: column;
   align-items: flex-start;
+  padding-inline: 0.5rem;
+  width: 100%;
 }
 .lesrooster a,
 .tarieven a,
@@ -536,13 +604,42 @@ html, body, html * {
   text-decoration: none;
 }
 
-.iconWrapper {
+.socialsWrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
+  gap: 1.5rem;
 }
-.iconWrapper img {
-  padding-right: 1.5rem;
+
+.rowWrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .rowWrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mapIcon {
+    display: none;
+  }
+}
+
+.locatieTxt {
+  letter-spacing: 0.06em;
+  font-weight: 300;
+}
+
+.locatieWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.locatieWrapper p {
+  margin-bottom: 0rem;
 }
 
 .mapWrapper {
@@ -554,7 +651,9 @@ html, body, html * {
   opacity: 40%;
   margin-top: 1rem;
 }
-@media (max-width: 500px) {
+
+
+@media (max-width: 1024px) {
   .mapWrapper {
     display: none;
   }
@@ -567,57 +666,28 @@ html, body, html * {
 
 .footer {
   position: relative;
-  bottom: 0;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #fff;
   width: 100vw;
-  height: 2rem;
-  margin-top: -2rem;
+  height: 2.5rem;
   overflow: hidden;
   color: white;
+  margin-top: -2.5rem;
+  z-index: 1;
 }
 
 .algemeneVoorwaarden {
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 .algemeneVoorwaarden:hover p {
   font-weight: bolder;
 }
 
 .copyRight {
-  margin-right: 1rem;
-}
-
-/* parallax scrolling */
-.parallax {
-  height: 100%;
-  width: 100vw;
-  background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top@1x.jpg") 1x, url("../../Foto/imagesets/LottaYoga_BG_Top@2x.jpg") 2x);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-}
-@media (max-width: 1100px) {
-  .parallax {
-    background-image: -webkit-image-set(url("../../Foto/imagesets/LottaYoga_BG_Top_Portrait@1x.jpg") 1x, url("../../Foto/imagesets/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: bottom;
-  }
-}
-
-.parallax2 {
-  height: 100%;
-  width: 100vw;
-  background-image: url("../../Foto/sitepic-2.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left, bottom;
+  margin-right: 1.5rem;
 }
