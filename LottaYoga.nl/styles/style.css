@@ -7,9 +7,6 @@ html,
   box-sizing: border-box;
 }
 
-html {
-  background-color: #00598E;
-}
 @media (max-width: 380px) {
   html {
     font-size: calc(1.12em + 0.25 * (100vw - 80em) / 40);
