@@ -342,7 +342,7 @@
     color: white;
     width: 100vw;
     min-height: 100%;
-    position: relative;
+    position:inherit;
     background: rgba(0, 0, 0, 0.5);
 
     h3 {
@@ -417,7 +417,6 @@
     flex-direction: column;
     align-items: flex-start;
     padding-inline: 0.5rem;
-  
     width: 100%;
 
     a {
@@ -428,71 +427,55 @@
 .socialsWrapper {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    border: 1px solid red;
-    gap: 1.5rem;
-   
+    align-items: center;
+    width: inherit;
+    gap: 2rem;
+    @media (min-width: 1025px) {
+    margin-top:1.2rem;
+    }
 }
 
 
 .rowWrapper {
     display: flex;
-    gap: 1.5rem;
-    border: 1px solid pink;
     align-items: center;
     justify-content: space-between;
-    margin-top: -0.5rem;
-
-    @media (min-width: 1024px) {
-       flex-direction: column;
-    }
-
-
-}
-
-.mapIcon {
-
+    margin-top: -1rem;
     @media (min-width: 1025px) {
-        display: none
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+     
     }
 }
+
 
 .locatieTxt {
     letter-spacing: .06em;
     font-weight: 300;
     margin-top: -0.5rem;
+    @media (min-width: 1025px) {
+       margin-top: 1rem;
+     }
 }
 
 .locatieWrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    border: 1px solid red;
-
-
-   
-
-    
-    
-   
-}
-.mapWrapper {
     display: flex;
-    overflow: hidden;
-    max-width: 250px;
-    height: 140px;
-    border-radius: 15px;
-    opacity: 40%;
-
-    @media (max-width: 1024px) {
-        display: none
-    }
+    align-items: center;
+    justify-items: flex-start;
+    gap: 1rem;
+    @media (min-width: 1025px) {
+        text-align: bottom;
+        align-items: center;
+      }
 }
 
-.mapInner {
-    width: 250px;
-    height: 150px;
+.mapIcon {
+    @media (min-width: 1025px) {
+        margin-top: 2rem;
+      }
+
+    
 }
 
 .footer {
@@ -501,14 +484,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position:relative;
     justify-content: space-between;
     border-top: 1px solid #fff;
     width: 100vw;
     height: 2.5rem;
-    overflow: hidden;
+    overflow: auto;
     color: white;
     margin-top: -2.5rem;
-    z-index: 1;
+    z-index: 3;
 }
 
 .algemeneVoorwaarden {
