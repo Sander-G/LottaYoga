@@ -132,7 +132,7 @@ body, html * {
 .modal {
   display: none;
   position: fixed;
-  z-index: 100;
+  z-index: 4;
   left: 0;
   top: 0;
   width: 100%;
@@ -147,7 +147,7 @@ body, html * {
 /* Modal Content/Box */
 .modal-content {
   background-color: rgba(16, 13, 13, 0.718);
-  margin: 15% auto;
+  margin: 4% auto;
   padding: 20px;
   border: 1px solid #888;
   border-radius: 5px;
@@ -201,13 +201,11 @@ body, html * {
 
 .mobile-nav {
   position: absolute;
-  top: 0rem;
+  top: 1rem;
   right: 100%;
   max-width: auto;
-  height: 2rem;
   display: flex;
   flex-direction: row;
-  padding-top: 2.35rem;
   color: #fff;
 }
 .mobile-nav a {
@@ -215,9 +213,9 @@ body, html * {
   position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin: 5px 10px;
+  margin: 10px 10px;
   color: #fff;
   text-decoration: none;
 }
@@ -226,17 +224,7 @@ body, html * {
 }
 
 .mobile-nav.is-active {
-  right: 6%;
-}
-@media (max-width: 768px) {
-  .mobile-nav.is-active {
-    right: 7%;
-  }
-}
-@media (max-width: 500px) {
-  .mobile-nav.is-active {
-    right: 17.5%;
-  }
+  right: 4rem;
 }
 
 .hero {
@@ -247,7 +235,7 @@ body, html * {
 
 .hero::before {
   content: "";
-  z-index: -3;
+  z-index: -2;
   position: fixed;
   display: block;
   top: 0px;
@@ -312,11 +300,6 @@ body, html * {
   background: none;
   outline: none;
   border: none;
-}
-@media (max-width: 768px) {
-  .hamburger {
-    width: 55px;
-  }
 }
 
 .hamburger .bar,
@@ -550,14 +533,15 @@ body, html * {
   justify-content: center;
   text-align: center;
   color: white;
-  z-index: 3;
+  z-index: 2;
   width: 100vw;
   min-height: 100%;
   position: relative;
   padding: 0rem 1rem;
   margin-bottom: -3.5rem;
 }
-.infoPagina h2, .infoPagina h3 {
+.infoPagina h2,
+.infoPagina h3 {
   text-shadow: 1px 1px #393939;
 }
 
@@ -660,7 +644,7 @@ body, html * {
   overflow: auto;
   color: white;
   margin-top: -2.5rem;
-  z-index: 4;
+  z-index: 2;
 }
 
 .algemeneVoorwaarden {
