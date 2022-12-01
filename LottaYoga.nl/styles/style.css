@@ -146,12 +146,12 @@ body, html * {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(16, 13, 13, 0.718);
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   border-radius: 5px;
-  width: 90%;
+  width: 80%;
 }
 
 .close {
@@ -159,6 +159,7 @@ body, html * {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
