@@ -8,10 +8,8 @@
     top: 1rem;
     right: 100%;
     max-width: auto;
-   
     display: flex;
     flex-direction: row;
-   
     color: #fff;
 
     & a {
@@ -44,7 +42,7 @@
 
 .hero::before {
     content: '';
-    z-index:-2;
+    z-index: -1;
     position: fixed;
     display: block;
     top: 0px;
@@ -82,8 +80,8 @@
 
 
         & img {
-            position: absolute;
-            top: 25%;
+            position:inherit;
+            top: -20%;
             width: 50%;
 
         }
@@ -377,7 +375,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    z-index: 2;
+    z-index: 3;
     width: 100vw;
     min-height: 100%;
     position: relative;
@@ -491,7 +489,7 @@
     overflow: auto;
     color: white;
     margin-top: -2.5rem;
-    z-index: 2;
+    z-index: 4;
 }
 
 .algemeneVoorwaarden {

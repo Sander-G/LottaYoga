@@ -30,7 +30,7 @@ html {
 
 html,
 body {
-  // -ms-overflow-style: none;
+  -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
   width: 100vw;
@@ -109,5 +109,4 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
- 
 }
