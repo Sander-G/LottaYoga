@@ -38,6 +38,7 @@
     height: 100%;
     position: relative;
 
+
 }
 
 .hero::before {
@@ -53,6 +54,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .logoContainer {
@@ -264,8 +266,7 @@
     background-size: cover;
     background-position: bottom center;
     background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
-    transform: translateZ(0);
-    will-change: transform;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .bgBottom {
@@ -279,13 +280,13 @@
     background-size: cover;
     background-position: bottom center;
     background-image: url("../../Foto/sitepic-4.jpg");
-    transform: translateZ(0);
-    will-change: transform;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 #YogaAanbod {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    
 }
 
 .YogaAanbod {
@@ -295,11 +296,11 @@
     justify-content: center;
     text-align: center;
     color: white;
-    z-index: 1;
     padding: 0rem 1rem;
     width: 100vw;
     min-height: 100%;
     position: relative;
+    -webkit-transform: translate3d(0,0,0);
 
     h2 {
         padding-bottom: 1em;
@@ -330,12 +331,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 2;
     color: white;
     width: 100vw;
     min-height: 100%;
-    position: inherit;
+    position: relative;
     background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate3d(0,0,0);
 
     h3 {
         text-shadow: 1px 1px #393939;
@@ -375,12 +376,13 @@
     justify-content: center;
     text-align: center;
     color: white;
-    z-index: 3;
     width: 100vw;
     min-height: 100%;
     position: relative;
     padding: 0rem 1rem;
     margin-bottom: -3.5rem;
+    -webkit-transform: translate3d(0,0,0);
+
 
     h2,
     h3 {
