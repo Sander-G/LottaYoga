@@ -16,7 +16,7 @@ mobile_menu.addEventListener('click', function () {
 
 // modal
 const modal = document.getElementById("myModal");
-const btn = document.getElementById("algemeneVoorwaarden");
+const btn = document.getElementById("voorwaardenToggle");
 const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {

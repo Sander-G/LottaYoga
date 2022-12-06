@@ -648,6 +648,12 @@ body, html * {
   z-index: 4;
 }
 
+.voorwaardenToggle {
+  background: transparent;
+  border: 0;
+  font-size: inherit;
+}
+
 .algemeneVoorwaarden {
   cursor: pointer;
   margin-left: 1.5rem;
