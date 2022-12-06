@@ -29,10 +29,20 @@ html {
 }
 html,
 body {
+<<<<<<< HEAD
+=======
+  -ms-overflow-style: none;
+>>>>>>> origin/develop
   scrollbar-width: none;
   scroll-behavior: smooth;
   width: 100vw;
   height: 100%;
+<<<<<<< HEAD
+=======
+ 
+// overscroll-behavior: none;
+// ... hier gebleven, nog checken
+>>>>>>> origin/develop
 }
 
 body::-webkit-scrollbar {
@@ -102,5 +112,4 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
- 
 }
