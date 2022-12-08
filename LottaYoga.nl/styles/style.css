@@ -345,27 +345,26 @@ body, html * {
   position: relative;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .logoLeft {
-    width: 100%;
+    width: 100vw;
   }
   .logoLeft img {
     margin-top: 20%;
     max-width: auto;
-    max-height: 20%;
+    max-height: 200px;
   }
   .logoRight {
     display: none;
   }
 }
-@media (min-width: 1025px) {
+@media (orientation: landscape) {
   .logoLeft {
     width: 50vw;
   }
   .logoLeft img {
     margin-top: 25%;
-    max-width: auto;
-    max-height: 25%;
+    max-height: 200px;
   }
   .logoRight {
     width: 50vw;
@@ -703,7 +702,7 @@ body, html * {
   border-top: 1px solid #fff;
   width: 100vw;
   height: 2.5rem;
-  overflow: auto;
+  overflow: hidden;
   color: white;
   margin-top: -2.5rem;
   z-index: 4;
