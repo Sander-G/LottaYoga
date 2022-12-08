@@ -32,21 +32,29 @@ html,
   }
 }
 
-html,
 body {
+  overscroll-behavior: none;
+  overflow: auto;
+  height: 100%;
+}
+
+html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  width: 100vw;
+  overflow: hidden;
   height: 100%;
+  position: absolute;
+}
+
+#root {
+  position: absolute;
+  overflow: auto;
+  height: -webkit-fill-available;
 }
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-.root {
-  height: -webkit-fill-available;
 }
 
 body,
@@ -208,6 +216,7 @@ body, html * {
   justify-content: center;
   color: #fff;
   right: 100%;
+  margin-top: -4px;
 }
 .mobile-nav a {
   display: flex;
@@ -294,12 +303,32 @@ body, html * {
   left: 0px;
   bottom: 0px;
   right: 0px;
-  background-image: url("../pix/background/LottaYoga_BG_Top_Portrait@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .hero::before {
+    background-image: url("../pix/background/LottaYoga_BG_Top_Portrait@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .hero::before {
+    background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .hero::before {
+    background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
 }
 
 .logoContainer {
@@ -311,9 +340,7 @@ body, html * {
 .logoLeft {
   width: 50%;
   height: 90vh;
-  margin-bottom: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
 }
@@ -323,19 +350,26 @@ body, html * {
     width: 100%;
   }
   .logoLeft img {
-    position: inherit;
-    top: -20%;
-    width: 50%;
+    margin-top: 20%;
+    max-width: auto;
+    max-height: 20%;
   }
-}
-.logoRight {
-  width: 50vw;
-  height: 90vh;
-}
-
-@media (max-width: 1024px) {
   .logoRight {
     display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .logoLeft {
+    width: 50vw;
+  }
+  .logoLeft img {
+    margin-top: 25%;
+    max-width: auto;
+    max-height: 25%;
+  }
+  .logoRight {
+    width: 50vw;
+    height: 90vh;
   }
 }
 .wrapper {
@@ -438,7 +472,6 @@ body, html * {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #00598e;
   background-size: cover;
   background-position: bottom center;
   background-image: url("../../Foto/sitepic-4.jpg");
@@ -631,7 +664,7 @@ body, html * {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   background-color: transparent;
   display: flex;
   flex-direction: row;

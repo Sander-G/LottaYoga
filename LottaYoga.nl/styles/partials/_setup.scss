@@ -28,30 +28,34 @@ html {
   }
 }
 
-html,
 body {
+  overscroll-behavior: none;
+  overflow: auto;
+  height: 100%;
+}
+html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  width: 100vw;
+  overflow: hidden;
+  
   height: 100%;
- 
-// overscroll-behavior: none;
-// ... hier gebleven, nog checken
+  position: absolute;
 }
 
-
-
+#root {
+  position: absolute;
+  overflow: auto;
+  height: -webkit-fill-available;
+}
 
 
 body::-webkit-scrollbar {
   display: none;
+
 }
 
 
-.root {
-  height: -webkit-fill-available;
-}
 
 body,
 h1,
