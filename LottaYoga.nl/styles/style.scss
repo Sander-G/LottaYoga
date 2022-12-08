@@ -193,6 +193,8 @@
   }
 }
 
+
+
 #OverMij {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -334,9 +336,11 @@
   text-align: center;
   color: white;
   width: 100vw;
+  padding: 0rem 1rem;
   min-height: 100%;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
 
@@ -350,9 +354,32 @@
 .bedrijfsYoga,
 .priveYoga,
 .workshops {
-  padding-inline: 1rem;
+  padding-inline: 0.5em;
   text-align: left;
 }
+
+.zwangerschapsYoga
+{
+    @media screen and (min-width: 1025px) {
+        max-width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+}
+
+.bedrijfsYoga, .priveYoga, .workshops {
+    @media screen and (min-width: 1025px) {
+        max-width: 23.33vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+}
+
 
 .fotoWrapper {
   p {
@@ -363,12 +390,24 @@
 #zwangerschapsYogaPic {
   border-radius: 7px;
   opacity: 70%;
-  max-height: 140px;
+ height: auto;
   float: right;
-  padding-left: 0.5em;
   width: auto;
-  max-width: 50vw;
-  height: auto;
+  max-width: 45vw;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  @media screen and (min-width: 1025px) {
+
+ float: none;
+ margin-top: 1.2rem;
+ max-width: 28.5vw;
+ margin-right: 0rem;
+ margin-left: 0rem;
+
+
+  
+}
+  
 }
 
 .infoPagina {
