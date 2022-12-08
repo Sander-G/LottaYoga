@@ -5,6 +5,7 @@ html,
 *:before,
 *:after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 380px) {
@@ -41,7 +42,6 @@ body {
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  scroll-behavior: smooth;
   overflow: hidden;
   height: 100%;
   position: absolute;

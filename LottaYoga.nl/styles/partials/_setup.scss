@@ -3,6 +3,7 @@ html,
 *:before,
 *:after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -36,7 +37,7 @@ body {
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  scroll-behavior: smooth;
+
   overflow: hidden;
   
   height: 100%;
