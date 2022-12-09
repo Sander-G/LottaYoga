@@ -57,9 +57,9 @@
   background: none;
   outline: none;
   border: none;
-  // @media (max-width: 768px) {
-  //     width: 55px;
-  // }
+  @media (max-width: 768px) {
+      width: 55px;
+  }
 }
 
 .hamburger .bar,
@@ -96,7 +96,6 @@
 .hero::before {
   content: "";
   z-index: -1;
-
   position: fixed;
   display: block;
   top: 0px;
@@ -105,30 +104,23 @@
   right: 0px;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
+  background-size: cover;
+    background-repeat: no-repeat;
 
   @media only screen and (max-width: 1024px) and (orientation: portrait) {
     background-image: url("../pix/background/LottaYoga_BG_Top_Portrait@1x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center bottom;
-}
+  }
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
-    background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-}
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+  background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
+  background-position: right bottom;
+  }
 
-@media only screen and (min-width: 1025px) {
-    background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
-
- 
- 
+  @media only screen and (min-width: 1025px) {
+  background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
+  background-position: right bottom;
+  } 
 }
 
 .logoContainer {
@@ -159,6 +151,18 @@
   }
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  .logoLeft {
+    width: 50%;
+    & img {
+      margin-top: 20%;
+      max-width: auto;
+      max-height: 35%;
+    }
+  }
+  
+}
+
 @media (min-width: 1025px) {
     .logoLeft {
         width: 50vw;
@@ -187,7 +191,7 @@
   text-align: left;
   padding: 0rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (orientation: portrait) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -267,10 +271,24 @@
   height: 100vh;
   background-color: #00598e;
   background-size: cover;
-  background-position: bottom center;
-  background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
+
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
+  background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
+  background-position: bottom center;
+}
+
+ @media only screen and (max-width: 1024px) and (orientation: landscape) {
+  background-image: url("../pix/background/Soorten.jpg");
+  background-position: bottom left;
+ }
+
+ @media only screen and (min-width: 1025px) {
+  background-image: url("../pix/background/Soorten.jpg");
+  background-position: bottom left;
+ }
+
 }
 
 .bgBottom {
@@ -282,7 +300,7 @@
   height: 100vh;
   background-size: cover;
   background-position: bottom center;
-  background-image: url("../../Foto/sitepic-4.jpg");
+  background-image: url("../pix/background/informatie.jpg");
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -434,7 +452,7 @@
   flex-direction: row;
   align-items: flex-start;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (orientation: portrait) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -455,6 +473,12 @@
   }
 }
 
+.tarieven {
+  @media (orientation: landscape){
+  line-height: 0.95;
+  }
+}
+
 .socialsWrapper {
   display: flex;
   flex-direction: row;
@@ -465,6 +489,9 @@
   @media (min-width: 1025px) {
     margin-top: 1.2rem;
   }
+  @media (orientation: landscape){
+     margin-top: 1.2rem;
+   }
 }
 
 .rowWrapper {
@@ -478,6 +505,13 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+
+   @media (orientation: landscape) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
 }
 
 .locatieTxt {
@@ -488,6 +522,9 @@
   @media (min-width: 1025px) {
     margin-top: 1rem;
   }
+   @media (orientation: landscape){
+     margin-top: 1rem;
+   }
 }
 
 .locatieWrapper {

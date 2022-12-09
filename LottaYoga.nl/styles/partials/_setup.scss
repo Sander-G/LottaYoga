@@ -13,9 +13,19 @@ html {
     font-size: -webkit-calc(112% + 0.25 * (100vw - 8000%) / 40);
   }
 
+  @media (max-width: 380px) and (orientation: landscape) {
+    font-size: calc(1.08em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(108% + 0.25 * (100vw - 8000%) / 40);
+  }
+
   @media (min-width: 381px) and (max-width: 768px) {
     font-size: calc(1.25em + 0.25 * (100vw - 80em) / 40);
     font-size: -webkit-calc(125% + 0.25 * (100vw - 8000%) / 40);
+  }
+
+  @media (min-width: 381px) and (max-width: 768px) and (orientation: landscape) {
+    font-size: calc(1.06em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(106% + 0.25 * (100vw - 8000%) / 40);
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
