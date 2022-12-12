@@ -46,6 +46,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  
 }
 
 .hamburger {
@@ -233,15 +234,19 @@
   @media (min-width: 769px) and (max-width: 1024px) {
     margin-top: 15rem;
   }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    margin-top: 0.5rem;
+  }
 }
 
 .YogaAlliancePix {
-  max-height: 70px;
-  max-width: 100%;
+  
+  max-width: 50px;
   margin-inline: 0.5rem;
 
   @media (max-width: 380px) {
-    max-height: 50px;
+    max-width: 50px;
     // margin-top: 2rem;
   }
 }
@@ -374,6 +379,11 @@
 .workshops {
   padding-inline: 0.5em;
   text-align: left;
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    padding-inline: 0.3em;
+
+  }
 }
 
 .zwangerschapsYoga
@@ -385,6 +395,11 @@
         align-items: flex-start;
         
     }
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+      max-width: 40vw
+
+    }
 }
 
 .bedrijfsYoga, .priveYoga, .workshops {
@@ -394,6 +409,11 @@
         flex-direction: column;
         align-items: flex-start;
         
+    }
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+      max-width: 20vw;
+
     }
 
 }
@@ -421,10 +441,17 @@
  max-width: 28.5vw;
  margin-right: 0rem;
  margin-left: 0rem;
-
-
-  
 }
+
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  max-width: 20vw;
+  margin-left: 0rem;
+  float:left
+
+}
+
+ padding-inline: 0.2em;
   
 }
 

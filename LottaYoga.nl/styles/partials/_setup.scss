@@ -14,8 +14,8 @@ html {
   }
 
   @media (max-width: 380px) and (orientation: landscape) {
-    font-size: calc(1.08em + 0.25 * (100vw - 80em) / 40);
-    font-size: -webkit-calc(108% + 0.25 * (100vw - 8000%) / 40);
+    font-size: calc(1.06em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(106% + 0.25 * (100vw - 8000%) / 40);
   }
 
   @media (min-width: 381px) and (max-width: 768px) {
@@ -30,7 +30,12 @@ html {
 
   @media (min-width: 769px) and (max-width: 1024px) {
     font-size: calc(1.28em + 0.25 * (100vw - 80em) / 40);
-    font-size: -webkit-calc(127% + 0.25 * (100vw - 8000%) / 40);
+    font-size: -webkit-calc(128% + 0.25 * (100vw - 8000%) / 40);
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) and (orientation:landscape) {
+    font-size: calc(1.08em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(108% + 0.25 * (100vw - 8000%) / 40);
   }
 
   @media (min-width: 1025px) {
