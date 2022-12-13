@@ -14,7 +14,7 @@ menu.addEventListener('click', function () {
 
 
 // modal
-const modal = document.getElementById("myModal");
+const modal = document.getElementById("Modal");
 const btn = document.getElementById("voorwaardenToggle");
 const span = document.getElementsByClassName("close")[0];
 

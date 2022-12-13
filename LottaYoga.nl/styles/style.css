@@ -180,9 +180,12 @@ body, html * {
   border-radius: 5px;
   width: 90%;
 }
+.modal-content h3 {
+  text-align: center;
+}
 
 .close {
-  color: #aaa;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
