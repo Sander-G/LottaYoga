@@ -727,6 +727,9 @@ body, html * {
   width: inherit;
   gap: 1.5rem;
 }
+.socialsWrapper img {
+  max-height: 30px;
+}
 @media (min-width: 1025px) {
   .socialsWrapper {
     margin-top: 1.2rem;

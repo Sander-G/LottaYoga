@@ -519,6 +519,8 @@
   width: inherit;
   gap: 1.5rem;
 
+  & img {max-height: 30px}
+
   @media (min-width: 1025px) {
     margin-top: 1.2rem;
   }
