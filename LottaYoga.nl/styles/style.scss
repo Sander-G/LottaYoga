@@ -2,7 +2,7 @@
 @import "partials/typography";
 @import "partials/utils";
 
-.mobile-nav {
+.nav {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,7 @@
   }
 }
 
-.mobile-nav.is-active {
+.nav.is-active {
   right: 0%;
 }
 
@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  
+
 }
 
 .hamburger {
@@ -58,8 +58,9 @@
   background: none;
   outline: none;
   border: none;
+
   @media (max-width: 768px) {
-      width: 55px;
+    width: 55px;
   }
 }
 
@@ -106,7 +107,7 @@
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
   background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
   @media only screen and (max-width: 1024px) and (orientation: portrait) {
     background-image: url("../pix/background/LottaYoga_BG_Top_Portrait@1x.jpg");
@@ -114,14 +115,14 @@
   }
 
   @media only screen and (max-width: 1024px) and (orientation: landscape) {
-  background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
-  background-position: right bottom;
+    background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
+    background-position: right bottom;
   }
 
   @media only screen and (min-width: 1025px) {
-  background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
-  background-position: right bottom;
-  } 
+    background-image: url("../pix/background/LottaYoga_BG_Top@1x.jpg");
+    background-position: right bottom;
+  }
 }
 
 .logoContainer {
@@ -134,19 +135,21 @@
   width: 50%;
   height: 90vh;
   display: flex;
-    justify-content: center;
-    position: relative;
+  justify-content: center;
+  position: relative;
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .logoLeft {
     width: 100%;
+
     & img {
       margin-top: 20%;
       max-width: auto;
       max-height: 20%;
     }
   }
+
   .logoRight {
     display: none;
   }
@@ -155,35 +158,37 @@
 @media (max-width: 1024px) and (orientation: landscape) {
   .logoLeft {
     width: 50%;
+
     & img {
       margin-top: 20%;
       max-width: auto;
       max-height: 35%;
     }
   }
-  
+
 }
 
 @media (min-width: 1025px) {
-    .logoLeft {
-        width: 50vw;
-      & img {
-        margin-top: 25%;
+  .logoLeft {
+    width: 50vw;
+
+    & img {
+      margin-top: 25%;
       max-width: auto;
       max-height: 25%;
-  
-      }
+
     }
-  
+  }
+
 
   .logoRight {
     width: 50vw;
     height: 90vh;
   }
-  
-  
-    
-  }
+
+
+
+}
 
 
 .wrapper {
@@ -241,7 +246,7 @@
 }
 
 .YogaAlliancePix {
-  
+
   max-width: 50px;
   margin-inline: 0.5rem;
 
@@ -280,19 +285,19 @@
   -webkit-transform: translate3d(0, 0, 0);
 
   @media only screen and (max-width: 1024px) and (orientation: portrait) {
-  background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
-  background-position: bottom center;
-}
+    background-image: url("../pix/background/LottaYoga_BG_Soorten_Portrait@1x.jpg");
+    background-position: bottom center;
+  }
 
- @media only screen and (max-width: 1024px) and (orientation: landscape) {
-  background-image: url("../pix/background/Soorten.jpg");
-  background-position: bottom left;
- }
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    background-image: url("../pix/background/Soorten.jpg");
+    background-position: bottom left;
+  }
 
- @media only screen and (min-width: 1025px) {
-  background-image: url("../pix/background/Soorten.jpg");
-  background-position: bottom left;
- }
+  @media only screen and (min-width: 1025px) {
+    background-image: url("../pix/background/Soorten.jpg");
+    background-position: bottom left;
+  }
 
 }
 
@@ -386,35 +391,35 @@
   }
 }
 
-.zwangerschapsYoga
-{
-    @media screen and (min-width: 1025px) {
-        max-width: 30vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
-    }
+.zwangerschapsYoga {
+  @media screen and (min-width: 1025px) {
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    @media (max-width: 1024px) and (orientation: landscape) {
-      max-width: 40vw
+  }
 
-    }
+  @media (max-width: 1024px) and (orientation: landscape) {
+    max-width: 40vw
+  }
 }
 
-.bedrijfsYoga, .priveYoga, .workshops {
-    @media screen and (min-width: 1025px) {
-        max-width: 23.33vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
-    }
+.bedrijfsYoga,
+.priveYoga,
+.workshops {
+  @media screen and (min-width: 1025px) {
+    max-width: 23.33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    @media (max-width: 1024px) and (orientation: landscape) {
-      max-width: 20vw;
+  }
 
-    }
+  @media (max-width: 1024px) and (orientation: landscape) {
+    max-width: 20vw;
+
+  }
 
 }
 
@@ -428,31 +433,31 @@
 #zwangerschapsYogaPic {
   border-radius: 7px;
   opacity: 70%;
- height: auto;
+  height: auto;
   float: right;
   width: auto;
   max-width: 45vw;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+
   @media screen and (min-width: 1025px) {
 
- float: none;
- margin-top: 1.2rem;
- max-width: 28.5vw;
- margin-right: 0rem;
- margin-left: 0rem;
-}
+    float: none;
+    margin-top: 1.2rem;
+    max-width: 28.5vw;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
 
 
-@media (max-width: 1024px) and (orientation: landscape) {
-  max-width: 20vw;
-  margin-left: 0rem;
-  float:left
+  @media (max-width: 1024px) and (orientation: landscape) {
+    max-width: 20vw;
+    margin-left: 0rem;
+    float: left
+  }
 
-}
+  padding-inline: 0.2em;
 
- padding-inline: 0.2em;
-  
 }
 
 .infoPagina {
@@ -468,6 +473,7 @@
   margin-bottom: -3.5rem;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
+
   h2,
   h3 {
     text-shadow: 1px 1px #393939;
@@ -501,8 +507,8 @@
 }
 
 .tarieven {
-  @media (orientation: landscape){
-  line-height: 0.95;
+  @media (orientation: landscape) {
+    line-height: 0.95;
   }
 }
 
@@ -516,9 +522,10 @@
   @media (min-width: 1025px) {
     margin-top: 1.2rem;
   }
-  @media (orientation: landscape){
-     margin-top: 1.2rem;
-   }
+
+  @media (orientation: landscape) {
+    margin-top: 1.2rem;
+  }
 }
 
 .rowWrapper {
@@ -534,11 +541,11 @@
   }
 
 
-   @media (orientation: landscape) {
+  @media (orientation: landscape) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-   }
+  }
 }
 
 .locatieTxt {
@@ -549,9 +556,10 @@
   @media (min-width: 1025px) {
     margin-top: 1rem;
   }
-   @media (orientation: landscape){
-     margin-top: 1rem;
-   }
+
+  @media (orientation: landscape) {
+    margin-top: 1rem;
+  }
 }
 
 .locatieWrapper {
@@ -594,6 +602,7 @@
   border: 0;
   font-size: inherit;
 }
+
 .algemeneVoorwaarden {
   cursor: pointer;
   margin-left: 1.2rem;

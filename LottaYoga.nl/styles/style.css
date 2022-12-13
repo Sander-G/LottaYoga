@@ -226,7 +226,7 @@ body, html * {
   font-size: 1.6rem;
 }
 
-.mobile-nav {
+.nav {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -236,7 +236,7 @@ body, html * {
   right: 100%;
   margin-top: -4px;
 }
-.mobile-nav a {
+.nav a {
   display: flex;
   position: relative;
   align-items: center;
@@ -249,11 +249,11 @@ body, html * {
   text-decoration: none;
   text-underline-offset: 5px;
 }
-.mobile-nav a:hover {
+.nav a:hover {
   text-decoration: underline 2px #fff;
 }
 
-.mobile-nav.is-active {
+.nav.is-active {
   right: 0%;
 }
 
@@ -618,7 +618,9 @@ body, html * {
 }
 
 @media screen and (min-width: 1025px) {
-  .bedrijfsYoga, .priveYoga, .workshops {
+  .bedrijfsYoga,
+.priveYoga,
+.workshops {
     max-width: 23.33vw;
     display: flex;
     flex-direction: column;
@@ -626,7 +628,9 @@ body, html * {
   }
 }
 @media (max-width: 1024px) and (orientation: landscape) {
-  .bedrijfsYoga, .priveYoga, .workshops {
+  .bedrijfsYoga,
+.priveYoga,
+.workshops {
     max-width: 20vw;
   }
 }
