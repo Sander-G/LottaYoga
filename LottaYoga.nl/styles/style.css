@@ -832,6 +832,12 @@ body, html * {
   }
 }
 
+@media (max-width: 1024px) and (orientation: portrait) {
+  .aanmelden {
+    margin-top: -0.8rem;
+  }
+}
+
 .footer {
   position: fixed;
   background-color: transparent;
