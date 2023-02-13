@@ -633,16 +633,22 @@
   background: transparent;
   border: 0;
   font-size: inherit;
-}
-
-.algemeneVoorwaarden {
-  cursor: pointer;
+  font-weight: lighter;
   margin-left: 1.2rem;
+  cursor: pointer;
+  -moz-osx-font-smoothing: #f2f1ef;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: .06em;
+    font-weight: 300;
+    text-shadow: 0.5px 0.5px #170f0f;
+  &:hover {
+      font-weight: 400;
+  }
 }
 
-.algemeneVoorwaarden:hover p {
-  font-weight: bolder;
-}
+
 
 .copyRight {
   margin-right: 1.2rem;

@@ -609,9 +609,9 @@ body, html * {
 }
 @media (max-width: 1024px) and (orientation: landscape) {
   .zwangerschapsYoga,
-.bedrijfsYoga,
-.priveYoga,
-.workshops {
+  .bedrijfsYoga,
+  .priveYoga,
+  .workshops {
     padding-inline: 0.3em;
   }
 }
@@ -632,8 +632,8 @@ body, html * {
 
 @media screen and (min-width: 1025px) {
   .bedrijfsYoga,
-.priveYoga,
-.workshops {
+  .priveYoga,
+  .workshops {
     max-width: 23.33vw;
     display: flex;
     flex-direction: column;
@@ -642,8 +642,8 @@ body, html * {
 }
 @media (max-width: 1024px) and (orientation: landscape) {
   .bedrijfsYoga,
-.priveYoga,
-.workshops {
+  .priveYoga,
+  .workshops {
     max-width: 20vw;
   }
 }
@@ -837,15 +837,19 @@ body, html * {
   background: transparent;
   border: 0;
   font-size: inherit;
-}
-
-.algemeneVoorwaarden {
-  cursor: pointer;
+  font-weight: lighter;
   margin-left: 1.2rem;
+  cursor: pointer;
+  -moz-osx-font-smoothing: #f2f1ef;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: 0.06em;
+  font-weight: 300;
+  text-shadow: 0.5px 0.5px #170f0f;
 }
-
-.algemeneVoorwaarden:hover p {
-  font-weight: bolder;
+.voorwaardenToggle:hover {
+  font-weight: 400;
 }
 
 .copyRight {
