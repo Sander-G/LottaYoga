@@ -726,6 +726,13 @@ body, html * {
 .contact a {
   text-decoration: none;
 }
+@media (max-width: 1024px) and (orientation: portrait) {
+  .lesrooster h3,
+  .tarieven h3,
+  .contact h3 {
+    margin-bottom: -18px;
+  }
+}
 
 @media (orientation: landscape) {
   .tarieven {
@@ -839,6 +846,7 @@ body, html * {
   font-size: inherit;
   font-weight: lighter;
   margin-left: 1.2rem;
+  user-select: none;
   cursor: pointer;
   -moz-osx-font-smoothing: #f2f1ef;
   -webkit-font-smoothing: antialiased !important;

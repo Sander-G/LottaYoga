@@ -517,6 +517,8 @@
   @media (max-width: 1024px) and (orientation: portrait) {
     flex-direction: column;
     align-items: flex-start;
+
+   
   }
 }
 
@@ -532,6 +534,14 @@
   a {
     text-decoration: none;
   }
+
+        @media (max-width: 1024px) and (orientation: portrait) {
+        
+        h3 {
+            margin-bottom: -18px;
+          }
+        }
+
 }
 
 .tarieven {
@@ -635,6 +645,7 @@
   font-size: inherit;
   font-weight: lighter;
   margin-left: 1.2rem;
+  user-select: none;
   cursor: pointer;
   -moz-osx-font-smoothing: #f2f1ef;
     -webkit-font-smoothing: antialiased !important;
