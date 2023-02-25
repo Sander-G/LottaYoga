@@ -506,7 +506,6 @@
   text-align: center;
   color: white;
   padding: 0rem 1rem;
-  width: 100vw;
   min-height: 100%;
   position: relative;
   transform: none;
@@ -591,6 +590,7 @@
   color: white;
   width: 100vw;
   min-height: 100%;
+   background: rgba(0, 0, 0, 0.5);
   position: relative;
   padding: 0rem 1rem;
   margin-bottom: -3.5rem;
