@@ -680,6 +680,81 @@ body, html * {
   }
 }
 
+#NewSection {
+  width: 100vw;
+  height: 100%;
+}
+
+.NewSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0rem 1rem;
+  width: 100vw;
+  min-height: 100%;
+  position: relative;
+  transform: none;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.NewSection h2 {
+  padding-bottom: 1em;
+  text-shadow: 1px 1px #393939;
+}
+.NewSection h3 {
+  margin-bottom: 0;
+  text-shadow: 1px 1px #393939;
+}
+.NewSection p {
+  margin-top: 0.2em;
+}
+
+.NewSectionBg {
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transform: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .NewSectionBg {
+    background-image: url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg");
+    background-image: -webkit-image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg") 1x, url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@2x.jpg") 2x);
+    background-image: image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg") 1x, url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@2x.jpg") 2x);
+    background-position: bottom center;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .NewSectionBg {
+    background-image: url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg");
+    background-image: -webkit-image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x, url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
+    background-image: image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x, url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
+    background-position: bottom left;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .NewSectionBg {
+    background-image: url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg");
+    background-image: -webkit-image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x, url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
+    background-image: image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x, url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
+    background-position: bottom left;
+  }
+}
+
+.newSection1,
+.newSection2,
+.newSection3 {
+  font-weight: 400;
+  padding-inline: 0.5em;
+}
+
 .infoPagina {
   display: flex;
   flex-direction: column;
