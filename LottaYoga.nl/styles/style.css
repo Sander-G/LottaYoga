@@ -659,12 +659,12 @@ body, html * {
 }
 @media screen and (min-width: 1025px) {
   .bedrijfsKlanten img {
-    max-height: 40px;
+    max-height: 35px;
   }
 }
 @media screen and (max-width: 1024px) {
   .bedrijfsKlanten img {
-    max-height: 35px;
+    max-height: 30px;
   }
 }
 
