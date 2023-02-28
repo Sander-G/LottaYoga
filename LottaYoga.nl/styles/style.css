@@ -104,11 +104,6 @@ ul {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .button {
   background: none;
   color: inherit;
@@ -646,6 +641,17 @@ body, html * {
   .workshops {
     max-width: 20vw;
   }
+}
+
+.bedrijfsKlanten {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.bedrijfsKlanten img {
+  max-height: 40px;
+  margin-inline: auto;
 }
 
 .fotoWrapper p {
