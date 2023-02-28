@@ -364,7 +364,7 @@ body, html * {
   .logoLeft img {
     margin-top: 20%;
     max-width: auto;
-    max-height: 35%;
+    max-height: 25%;
   }
 }
 @media (min-width: 1025px) {
@@ -647,11 +647,25 @@ body, html * {
   display: flex;
   width: 100%;
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 900px) {
+  .bedrijfsKlanten {
+    margin-top: 1rem;
+  }
 }
 .bedrijfsKlanten img {
-  max-height: 40px;
   margin-inline: auto;
+}
+@media screen and (min-width: 1025px) {
+  .bedrijfsKlanten img {
+    max-height: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bedrijfsKlanten img {
+    max-height: 35px;
+  }
 }
 
 .fotoWrapper p {
@@ -815,6 +829,16 @@ body, html * {
   }
 }
 
+@media (max-width: 1024px) and (orientation: portrait) {
+  .tarieven h3 {
+    margin-top: -1.5rem;
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  .contact {
+    margin-top: 2rem;
+  }
+}
 @media (orientation: landscape) {
   .tarieven {
     line-height: 0.95;
@@ -826,10 +850,15 @@ body, html * {
   flex-direction: row;
   align-items: center;
   width: inherit;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 .socialsWrapper img {
   max-height: 30px;
+}
+@media screen and (max-width: 550px) {
+  .socialsWrapper img {
+    max-height: 25px;
+  }
 }
 @media (min-width: 1025px) {
   .socialsWrapper {
@@ -868,6 +897,11 @@ body, html * {
   font-weight: 300;
   margin-top: -0.5rem;
 }
+@media (max-width: 800px) {
+  .locatieTxt {
+    scale: 0.8;
+  }
+}
 @media (min-width: 1025px) {
   .locatieTxt {
     margin-top: 1rem;
@@ -897,10 +931,15 @@ body, html * {
     margin-top: 2rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .mapIcon img {
+    max-height: 25px;
+  }
+}
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .aanmelden {
-    margin-top: -0.8rem;
+    margin-bottom: -1rem;
   }
 }
 

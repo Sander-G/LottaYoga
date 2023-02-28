@@ -151,6 +151,7 @@
   position: relative;
 }
 
+
 @media (max-width: 1024px) and (orientation: portrait) {
   .logoLeft {
     width: 100%;
@@ -174,7 +175,7 @@
     & img {
       margin-top: 20%;
       max-width: auto;
-      max-height: 35%;
+      max-height: 25%;
     }
   }
 }
@@ -464,10 +465,23 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  @media screen and (min-width: 900px) {
+      margin-top: 1rem;
+    }
   & img {
+    margin-inline: auto;
+    @media screen and (min-width: 1025px){
       max-height: 40px;
-      margin-inline: auto;   
+    }
+    @media screen and (max-width: 1024px) {
+      max-height: 35px;
+    }
+
+                
+
+         
     }
 }
 
@@ -651,6 +665,18 @@
 
 }
 
+@media (max-width: 1024px) and (orientation: portrait) {
+.tarieven h3 {
+    margin-top: -1.5rem;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .contact {
+    margin-top: 2rem;
+  }
+}
+
 .tarieven {
   @media (orientation: landscape) {
     line-height: 0.95;
@@ -662,9 +688,14 @@
   flex-direction: row;
   align-items: center;
   width: inherit;
-  gap: 1.5rem;
+  gap: 1.3rem;
+ 
   & img {
-    max-height: 30px
+    max-height: 30px;
+    @media screen and (max-width: 550px) {
+        max-height: 25px;
+      }
+
   }
   @media (min-width: 1025px) {
     margin-top: 1.2rem;
@@ -697,6 +728,9 @@
   letter-spacing: 0.06em;
   font-weight: 300;
   margin-top: -0.5rem;
+  @media (max-width: 800px) {
+      scale: 0.8;
+    }
 
   @media (min-width: 1025px) {
     margin-top: 1rem;
@@ -721,11 +755,16 @@
   @media (min-width: 1025px) {
     margin-top: 2rem;
   }
+    & img {
+    @media screen and (max-width: 550px) {
+      max-height: 25px;
+    }
+  }
 }
 
 .aanmelden {
   @media (max-width: 1024px) and (orientation: portrait) {
-    margin-top: -0.8rem;
+  margin-bottom: -1rem;
   }
 }
 
