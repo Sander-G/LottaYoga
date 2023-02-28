@@ -289,6 +289,9 @@ body, html * {
   min-height: 100vh;
   height: 100%;
   position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .hero::before {
@@ -405,6 +408,9 @@ body, html * {
   justify-content: space-between;
   text-align: left;
   margin: 0rem 1rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: white;
 }
 .OverMij p {
@@ -552,6 +558,9 @@ body, html * {
   width: 100vw;
   min-height: 100%;
   position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -587,6 +596,9 @@ body, html * {
   position: relative;
   background: rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -716,6 +728,9 @@ body, html * {
   min-height: 100%;
   position: relative;
   transform: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transform: translate3d(0, 0, 0);
 }
 .NewSection h2 {
@@ -786,6 +801,9 @@ body, html * {
   position: relative;
   padding: 0rem 1rem;
   margin-bottom: -3.5rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transform: none;
   -webkit-transform: translate3d(0, 0, 0);
 }
