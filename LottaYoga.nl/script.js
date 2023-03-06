@@ -30,4 +30,9 @@ window.onclick = function (event) {
   }
 }
 
-
+// phonenumber
+const encodedPhoneNumber = document.getElementById("encoded-phone-number").innerHTML;
+const decodedPhoneNumber = atob(encodedPhoneNumber);
+document.getElementById("phoneIcon").href = "tel:" + decodedPhoneNumber;
+console.log(encodedPhoneNumber)
+console.log(decodedPhoneNumber)
