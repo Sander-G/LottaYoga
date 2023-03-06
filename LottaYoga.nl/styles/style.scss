@@ -544,13 +544,7 @@
 }
 
 // new section 
-#NewSection {
-  width: 100vw;
-  height: 100%;
-}
-
-
-.NewSection {
+.faqAndReviews {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -559,6 +553,7 @@
   color: white;
   padding: 0rem 1rem;
   min-height: 100%;
+  width: 100vw;
   position: relative;
   transform: none;
     -webkit-user-select: none;
@@ -581,7 +576,7 @@
   }
 }
 
-.NewSectionBg {
+.faqAndReviewsBg {
   position: fixed;
   display: block;
   top: 0px;
@@ -622,21 +617,15 @@
         url("../pix/background/faq/LottaYoga_BG_Faq@2x.jpg") 2x);
     background-position: bottom right;
   }
-
 }
 
-
-.newSection1,
-.newSection2,
-.newSection3 {
+.faq,
+.reviews
+ {
   font-weight: 400;
   padding-inline: 0.5em;
+  max-width: 50vw;
 }
-
-// new section
-
-
-
 
 .infoPagina {
   display: flex;
