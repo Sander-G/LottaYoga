@@ -908,6 +908,11 @@ body, html * {
   }
 }
 
+#encodedPNumber,
+#encodedWNumber {
+  display: none;
+}
+
 .rowWrapper {
   display: flex;
   align-items: center;

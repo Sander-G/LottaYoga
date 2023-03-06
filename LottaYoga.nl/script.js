@@ -31,8 +31,18 @@ window.onclick = function (event) {
 }
 
 // phonenumber
-const encodedPhoneNumber = document.getElementById("encoded-phone-number").innerHTML;
+const encodedPhoneNumber = document.getElementById("encodedPNumber").innerHTML;
 const decodedPhoneNumber = atob(encodedPhoneNumber);
 document.getElementById("phoneIcon").href = "tel:" + decodedPhoneNumber;
 console.log(encodedPhoneNumber)
 console.log(decodedPhoneNumber)
+
+
+
+// whatsapp number
+const encodedWhatsAppNumber = document.getElementById("encodedWNumber").innerHTML;
+var decodedWhatsAppNumber = atob(encodedWhatsAppNumber);
+document.getElementById("whatsappIcon").href = "https://wa.me/" + decodedWhatsAppNumber;
+
+console.log(encodedWhatsAppNumber)
+console.log(decodedWhatsAppNumber)
