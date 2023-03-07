@@ -1,6 +1,6 @@
-@import "partials/setup";
-@import "partials/typography";
-@import "partials/utils";
+@import 'partials/setup';
+@import 'partials/typography';
+@import 'partials/utils';
 
 .nav {
   position: relative;
@@ -46,7 +46,6 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-
 }
 
 .hamburger {
@@ -68,7 +67,7 @@
 .hamburger:before,
 .hamburger:after {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   height: 5px;
   border-radius: 3px;
@@ -99,7 +98,7 @@
 }
 
 .hero::before {
-  content: "";
+  content: '';
   z-index: -1;
   position: fixed;
   display: block;
@@ -113,29 +112,23 @@
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 768px) and (orientation: portrait) {
-    background-image: url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg");
-    background-image: -webkit-image-set(url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg") 1x,
-        url("../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg") 1x,
-        url("../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
+    background-image: url('../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg');
+    background-image: -webkit-image-set(url('../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg') 1x, url('../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg') 1x, url('../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg') 2x);
     background-position: center bottom;
   }
 
   @media only screen and (max-width: 768px) and (orientation: landscape) {
-    background-image: url("../pix/background/top/LottaYoga_BG_Top@1x.jpg");
-    background-image: -webkit-image-set(url("../pix/background/top/LottaYoga_BG_Top@1x.jpg") 1x,
-        url("../pix/background/top/LottaYoga_BG_Top@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/top/LottaYoga_BG_Top@1x.jpg") 1x,
-        url("../pix/background/top/LottaYoga_BG_Top@2x.jpg") 2x);
+    background-image: url('../pix/background/top/LottaYoga_BG_Top@1x.jpg');
+    background-image: -webkit-image-set(url('../pix/background/top/LottaYoga_BG_Top@1x.jpg') 1x, url('../pix/background/top/LottaYoga_BG_Top@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/top/LottaYoga_BG_Top@1x.jpg') 1x, url('../pix/background/top/LottaYoga_BG_Top@2x.jpg') 2x);
     background-position: right bottom;
   }
 
   @media only screen and (min-width: 769px) {
-    background-image: url("../pix/background/top/LottaYoga_BG_Top@1x.jpg");
-    background-image: -webkit-image-set(url("../pix/background/top/LottaYoga_BG_Top@1x.jpg") 1x,
-        url("../pix/background/top/LottaYoga_BG_Top@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/top/LottaYoga_BG_Top@1x.jpg") 1x,
-        url("../pix/background/top/LottaYoga_BG_Top@2x.jpg") 2x);
+    background-image: url('../pix/background/top/LottaYoga_BG_Top@1x.jpg');
+    background-image: -webkit-image-set(url('../pix/background/top/LottaYoga_BG_Top@1x.jpg') 1x, url('../pix/background/top/LottaYoga_BG_Top@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/top/LottaYoga_BG_Top@1x.jpg') 1x, url('../pix/background/top/LottaYoga_BG_Top@2x.jpg') 2x);
     background-position: right bottom;
   }
 }
@@ -153,7 +146,6 @@
   justify-content: center;
   position: relative;
 }
-
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .logoLeft {
@@ -292,34 +284,27 @@
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 768px) and (orientation: portrait) {
-    background-image: url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg");
+    background-image: url('../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg") 1x,
-        url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg") 1x,
-        url("../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg') 1x, url('../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@1x.jpg') 1x, url('../pix/background/soorten/LottaYoga_BG_Soorten_Portrait@2x.jpg') 2x);
     background-position: bottom center;
   }
 
   @media only screen and (max-width: 768px) and (orientation: landscape) {
-    background-image: url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg");
-    background-image: -webkit-image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x,
-        url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x,
-        url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
+    background-image: url('../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg');
+    background-image: -webkit-image-set(url('../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg') 1x, url('../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg') 1x, url('../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg') 2x);
     background-position: bottom left;
   }
 
   @media only screen and (min-width: 769px) {
-    background-image: url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg");
+    background-image: url('../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x,
-        url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg") 1x,
-        url("../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg') 1x, url('../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/soorten/LottaYoga_BG_Soorten@1x.jpg') 1x, url('../pix/background/soorten/LottaYoga_BG_Soorten@2x.jpg') 2x);
     background-position: bottom left;
   }
-
 }
 
 .bgBottom {
@@ -334,37 +319,29 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-
   @media only screen and (max-width: 768px) and (orientation: portrait) {
-    background-image: url("../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@1x.jpg");
+    background-image: url('../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@1x.jpg") 1x,
-        url("../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@1x.jpg") 1x,
-        url("../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@1x.jpg') 1x, url('../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@1x.jpg') 1x, url('../pix/background/informatie/LottaYoga_BG_Informatie_Portrait@2x.jpg') 2x);
     background-position: center bottom;
   }
 
   @media only screen and (max-width: 768px) and (orientation: landscape) {
-    background-image: url("../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg");
+    background-image: url('../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg") 1x,
-        url("../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg") 1x,
-        url("../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg') 1x, url('../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg') 1x, url('../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg') 2x);
     background-position: center bottom;
   }
 
   @media only screen and (min-width: 769px) {
-    background-image: url("../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg");
+    background-image: url('../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg") 1x,
-        url("../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg") 1x,
-        url("../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg') 1x, url('../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/informatie/LottaYoga_BG_Informatie@1x.jpg') 1x, url('../pix/background/informatie/LottaYoga_BG_Informatie@2x.jpg') 2x);
     background-position: center bottom;
   }
-
 }
 
 #YogaAanbod {
@@ -445,7 +422,6 @@
 
   @media (max-width: 1024px) and (orientation: landscape) {
     padding-inline: 0.3em;
-
   }
 }
 
@@ -455,11 +431,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
   }
 
   @media (max-width: 1024px) and (orientation: landscape) {
-    max-width: 40vw
+    max-width: 40vw;
   }
 }
 
@@ -477,8 +452,6 @@
     max-width: 20vw;
   }
 }
-
-
 
 .bedrijfsKlanten {
   display: flex;
@@ -500,14 +473,8 @@
     @media screen and (max-width: 1024px) {
       max-height: 35px;
     }
-
-
-
-
   }
 }
-
-
 
 .fotoWrapper {
   p {
@@ -536,14 +503,12 @@
   @media (max-width: 1024px) and (orientation: landscape) {
     max-width: 20vw;
     margin-left: 0rem;
-    float: left
+    float: left;
   }
 
   padding-inline: 0.2em;
-
 }
 
-// new section 
 .faqAndReviews {
   display: flex;
   flex-direction: column;
@@ -590,31 +555,25 @@
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 768px) and (orientation: portrait) {
-    background-image: url("../pix/background/faq/LottaYoga_BG_Faq_Portrait@1x.jpg");
+    background-image: url('../pix/background/faq/LottaYoga_BG_Faq_Portrait@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/faq/LottaYoga_BG_Faq_Portrait@1x.jpg") 1x,
-        url("../pix/background/faq/LottaYoga_BG_Faq_Portrait@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/faq/LottaYoga_BG_Faq_Portrait@1x.jpg") 1x,
-        url("../pix/background/faq/LottaYoga_BG_Faq_Portrait@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/faq/LottaYoga_BG_Faq_Portrait@1x.jpg') 1x, url('../pix/background/faq/LottaYoga_BG_Faq_Portrait@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/faq/LottaYoga_BG_Faq_Portrait@1x.jpg') 1x, url('../pix/background/faq/LottaYoga_BG_Faq_Portrait@2x.jpg') 2x);
     background-position: bottom center;
   }
 
   @media only screen and (max-width: 768px) and (orientation: landscape) {
-    background-image: url("../pix/background/faq/LottaYoga_BG_Faq@1x.jpg");
-    background-image: -webkit-image-set(url("../pix/background/faq/LottaYoga_BG_Faq@1x.jpg") 1x,
-        url("../pix/background/faq/LottaYoga_BG_Faq@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/faq/LottaYoga_BG_Faq@1x.jpg") 1x,
-        url("../pix/background/faq/LottaYoga_BG_Faq@2x.jpg") 2x);
+    background-image: url('../pix/background/faq/LottaYoga_BG_Faq@1x.jpg');
+    background-image: -webkit-image-set(url('../pix/background/faq/LottaYoga_BG_Faq@1x.jpg') 1x, url('../pix/background/faq/LottaYoga_BG_Faq@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/faq/LottaYoga_BG_Faq@1x.jpg') 1x, url('../pix/background/faq/LottaYoga_BG_Faq@2x.jpg') 2x);
     background-position: bottom right;
   }
 
   @media only screen and (min-width: 769px) {
-    background-image: url("../pix/background/faq/LottaYoga_BG_Faq@1x.jpg");
+    background-image: url('../pix/background/faq/LottaYoga_BG_Faq@1x.jpg');
 
-    background-image: -webkit-image-set(url("../pix/background/faq/LottaYoga_BG_Faq@1x.jpg") 1x,
-        url("../pix/background/faq/LottaYoga_BG_Faq@2x.jpg") 2x);
-    background-image: image-set(url("../pix/background/faq/LottaYoga_BG_Faq@1x.jpg") 1x,
-        url("../pix/background/faq/LottaYoga_BG_Faq@2x.jpg") 2x);
+    background-image: -webkit-image-set(url('../pix/background/faq/LottaYoga_BG_Faq@1x.jpg') 1x, url('../pix/background/faq/LottaYoga_BG_Faq@2x.jpg') 2x);
+    background-image: image-set(url('../pix/background/faq/LottaYoga_BG_Faq@1x.jpg') 1x, url('../pix/background/faq/LottaYoga_BG_Faq@2x.jpg') 2x);
     background-position: bottom right;
   }
 }
@@ -626,13 +585,11 @@
   max-width: 50vw;
 
   @media (max-width: 1024px) {
-    max-width: 100vw
+    max-width: 100vw;
   }
 
   @media (max-width: 800px) {
-
     & p {
-
       font-size: 14px;
     }
   }
@@ -643,8 +600,6 @@
     display: none;
   }
 }
-
-
 
 .infoPagina {
   display: flex;
@@ -674,13 +629,12 @@
   display: flex;
   flex-direction: row;
   align-items: start;
-justify-content: space-between;
+  justify-content: space-between;
+
   @media (max-width: 1024px) and (orientation: portrait) {
     flex-direction: column;
     align-items: flex-start;
-   justify-content: space-evenly;
-
-
+    justify-content: space-evenly;
   }
 }
 
@@ -699,25 +653,18 @@ justify-content: space-between;
   }
 
   @media (max-width: 500px) and (orientation: portrait) {
-
     h3 {
       margin-bottom: -10px;
-     
-    
     }
   }
-
 }
 
 .contact {
   @media (max-width: 500px) and (orientation: portrait) {
-  
-      h3 {
-        margin-top: 10px;
-  
-  
-      }
+    h3 {
+      margin-top: 10px;
     }
+  }
 }
 
 .tarieven {
@@ -732,18 +679,14 @@ justify-content: space-between;
   align-items: center;
   width: inherit;
   gap: 1rem;
-   flex-wrap: wrap;
-
-
+  flex-wrap: wrap;
 
   & img {
     max-height: 30px;
 
     @media screen and (max-width: 550px) {
       max-height: 20px;
-     
     }
-
   }
 
   @media (min-width: 1025px) {
@@ -753,12 +696,11 @@ justify-content: space-between;
   @media (orientation: landscape) {
     margin-top: 1.2rem;
   }
-
 }
 
 #encodedPNumber,
 #encodedWNumber {
-  display: none
+  display: none;
 }
 
 .rowWrapper {
@@ -781,7 +723,6 @@ justify-content: space-between;
 }
 
 .locatieTxt {
-
   letter-spacing: 0.06em;
   font-weight: 300;
   margin-top: -0.5rem;
@@ -858,7 +799,7 @@ justify-content: space-between;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
   text-rendering: optimizelegibility !important;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
   font-weight: 300;
   text-shadow: 0.5px 0.5px #170f0f;
 
@@ -866,8 +807,6 @@ justify-content: space-between;
     font-weight: 400;
   }
 }
-
-
 
 .copyRight {
   margin-right: 1.2rem;
