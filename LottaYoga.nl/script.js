@@ -30,19 +30,13 @@ window.onclick = function (event) {
   }
 }
 
-// phonenumber
+// phone
 const encodedPhoneNumber = document.getElementById("encodedPNumber").innerHTML;
 const decodedPhoneNumber = atob(encodedPhoneNumber);
 document.getElementById("phoneIcon").href = "tel:" + decodedPhoneNumber;
-console.log(encodedPhoneNumber)
-console.log(decodedPhoneNumber)
 
-
-
-// whatsapp number
+// whatsapp
 const encodedWhatsAppNumber = document.getElementById("encodedWNumber").innerHTML;
-var decodedWhatsAppNumber = atob(encodedWhatsAppNumber);
+const decodedWhatsAppNumber = atob(encodedWhatsAppNumber);
 document.getElementById("whatsappIcon").href = "https://wa.me/" + decodedWhatsAppNumber;
 
-console.log(encodedWhatsAppNumber)
-console.log(decodedWhatsAppNumber)
