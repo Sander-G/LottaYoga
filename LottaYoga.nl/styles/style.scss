@@ -467,11 +467,11 @@
     margin-inline: auto;
 
     @media screen and (min-width: 1025px) {
-      max-height: 40px;
+      max-height: 35px;
     }
 
     @media screen and (max-width: 1024px) {
-      max-height: 35px;
+      max-height: 30px;
     }
   }
 }
@@ -652,7 +652,7 @@
     text-decoration: none;
   }
 
-  @media (max-width: 500px) and (orientation: portrait) {
+  @media (max-width: 800px) and (orientation: portrait) {
     h3 {
       margin-bottom: -10px;
     }
@@ -660,7 +660,7 @@
 }
 
 .contact {
-  @media (max-width: 500px) and (orientation: portrait) {
+  @media (max-width: 800px) and (orientation: portrait) {
     h3 {
       margin-top: 10px;
     }
@@ -679,7 +679,7 @@
   align-items: center;
   width: inherit;
   gap: 1rem;
-  flex-wrap: wrap;
+
 
   & img {
     max-height: 30px;
@@ -753,7 +753,7 @@
 }
 
 .mapIcon {
-  @media (min-width: 1025px) {
+  @media screen and (min-width: 1025px) {
     margin-top: 2rem;
   }
 
