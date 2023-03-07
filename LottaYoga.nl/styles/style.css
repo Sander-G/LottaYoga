@@ -721,7 +721,7 @@ body, html * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
   color: white;
   padding: 0rem 1rem;
@@ -798,7 +798,7 @@ body, html * {
 @media (max-width: 800px) {
   .faq p,
   .reviews p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
