@@ -39,8 +39,8 @@ html {
   }
 
   @media (min-width: 1025px) {
-    font-size: calc(1.30em + 0.25 * (100vw - 80em) / 40);
-    font-size: -webkit-calc(130% + 0.25 * (100vw - 8000%) / 40);
+    font-size: calc(1.25em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(125% + 0.25 * (100vw - 8000%) / 40);
   }
 }
 
