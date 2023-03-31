@@ -366,7 +366,7 @@ body, html * {
   }
   .logoLeft img {
     margin-top: 25vh;
-    max-height: 100px;
+    max-height: 80px;
   }
 }
 @media (max-width: 1700px) and (orientation: portrait) and (max-width: 768px) and (orientation: portrait) {
@@ -387,7 +387,7 @@ body, html * {
   .logoLeft img {
     margin-top: 50%;
     max-width: auto;
-    max-height: 100px;
+    max-height: 80px;
   }
   .logoRight {
     width: 50vw;
@@ -401,8 +401,7 @@ body, html * {
   }
   .logoLeft img {
     margin-top: 45%;
-    max-width: auto;
-    max-height: 120px;
+    max-height: 80px;
   }
   .logoRight {
     width: 50vw;
