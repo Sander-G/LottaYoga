@@ -34,5 +34,8 @@ window.onclick = function (event) {
 const encodedPhoneNumber = document.getElementById("encoded-phone-number").innerHTML;
 const decodedPhoneNumber = atob(encodedPhoneNumber);
 document.getElementById("phoneIcon").href = "tel:" + decodedPhoneNumber;
-console.log(encodedPhoneNumber)
-console.log(decodedPhoneNumber)
+
+// whatsapp
+const encodedWhatsAppNumber = document.getElementById('encodedWNumber').innerHTML;
+const decodedWhatsAppNumber = atob(encodedWhatsAppNumber);
+document.getElementById('whatsappIcon').href = 'https://wa.me/' + decodedWhatsAppNumber;

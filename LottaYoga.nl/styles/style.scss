@@ -112,7 +112,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media only screen and (max-width: 768px) and (orientation: portrait) {
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
     background-image: url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg");
     background-image: -webkit-image-set(url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg") 1x,
         url("../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
@@ -120,6 +120,15 @@
         url("../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
     background-position: center bottom;
   }
+
+    @media only screen and (min-width: 769px) and (max-width: 1400px) and (orientation: portrait){
+      background-image: url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg");
+      background-image: -webkit-image-set(url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg") 1x,
+          url("../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
+      background-image: image-set(url("../pix/background/top/LottaYoga_BG_Top_Portrait@1x.jpg") 1x,
+          url("../pix/background/top/LottaYoga_BG_Top_Portrait@2x.jpg") 2x);
+      background-position: center bottom;
+    }
 
   @media only screen and (max-width: 768px) and (orientation: landscape) {
     background-image: url("../pix/background/top/LottaYoga_BG_Top@1x.jpg");
@@ -130,7 +139,7 @@
     background-position: right bottom;
   }
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 769px) and (orientation: landscape) {
     background-image: url("../pix/background/top/LottaYoga_BG_Top@1x.jpg");
     background-image: -webkit-image-set(url("../pix/background/top/LottaYoga_BG_Top@1x.jpg") 1x,
         url("../pix/background/top/LottaYoga_BG_Top@2x.jpg") 2x);
@@ -144,28 +153,28 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+ 
 }
 
 .logoLeft {
   width: 50%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (max-width: 1200px) and (orientation: portrait) {
   .logoLeft {
     width: 100%;
-
+  
     & img {
-      margin-top: 20%;
-      max-width: auto;
-      max-height: 20%;
+      margin-top: 25vh;
+      max-height: 100px;
     }
   }
-
   .logoRight {
     display: none;
   }
@@ -174,29 +183,33 @@
 @media (max-width: 1024px) and (orientation: landscape) {
   .logoLeft {
     width: 50%;
-
     & img {
-      margin-top: 20%;
+      margin-top: 50%;
       max-width: auto;
-      max-height: 25%;
+      max-height: 100px;
     }
+  }
+  .logoRight {
+    width: 50vw;   
+    height: 100vh;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (orientation: landscape) {
   .logoLeft {
     width: 50vw;
+    height: 100vh;
 
     & img {
-      margin-top: 25%;
+      margin-top: 45%;
       max-width: auto;
-      max-height: 25%;
+      max-height: 120px;
     }
   }
 
   .logoRight {
     width: 50vw;
-    height: 90vh;
+    height: 100vh;
   }
 }
 
@@ -642,7 +655,7 @@
 
 
 .extraReview {
-  @media screen and (max-width: 768px) and (orientation: portrait) {
+  @media screen and (max-width: 1024px) and (orientation: portrait) {
     display: none;
   }
 
@@ -757,6 +770,12 @@
 
 }
 
+#encodedPNumber,
+#encodedWNumber {
+  display: none;
+}
+
+
 .rowWrapper {
   display: flex;
   align-items: center;
@@ -833,7 +852,7 @@
   align-items: center;
   position: inherit;
   justify-content: space-between;
-  border-top: 1px solid #fff;
+  border-top: 1px solid white;
   width: 100vw;
   height: 2.5rem;
   overflow: hidden;
