@@ -444,6 +444,12 @@
   padding-inline: 0.5em;
 }
 
+.hatha {
+  margin-top: 1.4em;
+  @media only screen and (max-width: 768px) {
+    margin-top: 0em;
+  }
+}
 .YogaAanbod2 {
   display: flex;
   flex-direction: column;
