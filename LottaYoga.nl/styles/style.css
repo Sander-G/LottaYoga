@@ -444,22 +444,7 @@ body, html * {
 .allianceWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-}
-@media (max-width: 380px) {
-  .allianceWrapper {
-    margin-top: 4rem;
-  }
-}
-@media (min-width: 380px) and (max-width: 768px) {
-  .allianceWrapper {
-    margin-top: 5rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .allianceWrapper {
-    margin-top: 15rem;
-  }
+  justify-content: center;
 }
 @media (max-width: 1024px) and (orientation: landscape) {
   .allianceWrapper {
@@ -468,12 +453,12 @@ body, html * {
 }
 
 .YogaAlliancePix {
-  max-width: 60px;
+  max-width: 45px;
   margin-inline: 0.5rem;
 }
 @media (max-width: 380px) {
   .YogaAlliancePix {
-    max-width: 50px;
+    max-width: 40px;
   }
 }
 
@@ -609,19 +594,9 @@ body, html * {
 }
 
 .yin,
-.vinyasa,
-.hatha {
+.vinyasa {
   font-weight: 400;
   padding-inline: 0.5em;
-}
-
-.hatha {
-  margin-top: 1.4em;
-}
-@media only screen and (max-width: 768px) {
-  .hatha {
-    margin-top: 0em;
-  }
 }
 
 .YogaAanbod2 {
