@@ -887,15 +887,21 @@ body, html * {
   }
 }
 
-#momoYoga {
+.momoYoga {
   vertical-align: bottom;
-  max-height: 16px;
+  height: 14px;
   transform: translateY(1px);
 }
+@media (min-width: 768px) {
+  .momoYoga {
+    height: 16px;
+    vertical-align: -20%;
+  }
+}
 @media (min-width: 1024px) {
-  #momoYoga {
-    max-height: 18px;
-    transform: translateY(1px);
+  .momoYoga {
+    height: 17px;
+    vertical-align: -22%;
   }
 }
 
