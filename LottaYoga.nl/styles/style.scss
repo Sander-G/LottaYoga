@@ -737,7 +737,16 @@
   }
 
 }
+#momoYoga {
+vertical-align:bottom;
+max-height:16px;
+transform: translateY(1px);
 
+@media (min-width: 1024px) {
+  max-height: 18px;
+    transform: translateY(1px);
+}
+}
 @media (max-width: 1024px) and (orientation: portrait) {
   .tarieven h3 {
     margin-top: -1.5rem;
