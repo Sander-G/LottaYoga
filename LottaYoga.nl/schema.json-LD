@@ -62,6 +62,82 @@
         "https://www.instagram.com/lotta.yoga/",
         "https://www.lottayoga.nl"
       ]
+    },
+   {
+      "@type": "Event",
+      "name": "Sunday Special",
+      "description": "Monthly event on every third Sunday",
+      "url": "https://www.lottayoga.nl/#informatie",
+      "location": {
+        "@type": "Place",
+        "name": "Lotta Yoga",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Voortsweg 204A",
+          "addressLocality": "Enschede",
+          "postalCode": "7523CK",
+          "addressCountry": "NL"
+        }
+      },
+      "startDate": "2023-09-17T13:00",
+      "endDate": "2023-09-17T14:15"
+    },
+    {
+      "@type": "Event",
+      "name": "Sunday Special",
+      "description": "Monthly event on every third Sunday",
+      "url": "https://www.lottayoga.nl/#informatie",
+      "location": {
+        "@type": "Place",
+        "name": "Lotta Yoga",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Voortsweg 204A",
+          "addressLocality": "Enschede",
+          "postalCode": "7523CK",
+          "addressCountry": "NL"
+        }
+      },
+      "startDate": "2023-10-15T13:00",
+      "endDate": "2023-10-15T14:15"
+    },
+    {
+      "@type": "Event",
+      "name": "Sunday Special",
+      "description": "Monthly event on every third Sunday",
+      "url": "https://www.lottayoga.nl/#informatie",
+      "location": {
+        "@type": "Place",
+        "name": "Lotta Yoga",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Voortsweg 204A",
+          "addressLocality": "Enschede",
+          "postalCode": "7523CK",
+          "addressCountry": "NL"
+        }
+      },
+      "startDate": "2023-11-19T13:00",
+      "endDate": "2023-11-19T14:15"
+    },
+    {
+      "@type": "Event",
+      "name": "Sunday Special",
+      "description": "Monthly event on every third Sunday",
+      "url": "https://www.lottayoga.nl/#informatie",
+      "location": {
+        "@type": "Place",
+        "name": "Lotta Yoga",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Voortsweg 204A",
+          "addressLocality": "Enschede",
+          "postalCode": "7523CK",
+          "addressCountry": "NL"
+        }
+      },
+      "startDate": "2023-12-17T13:00",
+      "endDate": "2023-12-17T14:15"
     }
   ]
 }
