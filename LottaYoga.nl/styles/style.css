@@ -143,6 +143,10 @@ body, html * {
   float: right;
 }
 
+.yogazen-link {
+  font-weight: 400;
+}
+
 .alignRnames {
   float: right;
   font-weight: 400;
@@ -262,6 +266,7 @@ body, html * {
 @media (max-width: 768px) {
   .hamburger {
     width: 55px;
+    scale: 0.8;
   }
 }
 
@@ -594,6 +599,7 @@ body, html * {
 }
 
 .yin,
+.hatha,
 .vinyasa {
   font-weight: 400;
   padding-inline: 0.5em;
@@ -882,26 +888,8 @@ body, html * {
   .lesrooster h3,
   .tarieven h3,
   .contact h3 {
-    margin-bottom: -12px;
+    margin-bottom: 12px;
     margin-top: -5px;
-  }
-}
-
-.momoYoga {
-  vertical-align: bottom;
-  height: 14px;
-  transform: translateY(1px);
-}
-@media (min-width: 768px) {
-  .momoYoga {
-    height: 16px;
-    vertical-align: -20%;
-  }
-}
-@media (min-width: 1024px) {
-  .momoYoga {
-    height: 17px;
-    vertical-align: -22%;
   }
 }
 
@@ -956,7 +944,7 @@ body, html * {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -1rem;
+  margin-top: 1rem;
 }
 @media (min-width: 1025px) {
   .rowWrapper {
